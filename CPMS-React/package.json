@@ -1,0 +1,51 @@
+{
+  "name": "cpms-syllabus-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node tools/link-repository-react.mjs",
+    "format:lab": "prettier --write \"learning/{basic,case}/**/*.{html,js,jsx,mjs}\" \"learning/{LearningLab,OriginalProgram,SourceCode}.jsx\"",
+    "lab:sync": "node tools/sync-original-labs.mjs",
+    "dev": "vite --host 127.0.0.1",
+    "server": "node backend/server.js",
+    "lab:server": "node learning/server/start.mjs",
+    "case:server": "node case-study/experiment4/server.js",
+    "db:case-study": "node tools/initialize-case-study.mjs --initialize-case-study",
+    "test:case-mysql": "node tests/combined-case-mysql.mjs",
+    "lab:service": "node learning/server/advice-service.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "lint": "eslint .",
+    "test": "node --test tests/*.test.mjs",
+    "test:mysql": "node tests/mysql-exercises.mjs",
+    "test:basic-mysql": "node tests/basic-mysql.mjs",
+    "db:syllabus": "node tools/initialize-syllabus.mjs --initialize-syllabus",
+    "db:demo": "node tools/initialize-demo.mjs --initialize-demo",
+    "db:workspace": "node tools/initialize-workspace.mjs --initialize-workspace",
+    "test:workspace": "node tests/workspace-mysql.mjs",
+    "submission": "node tools/export-submission.mjs",
+    "check:submission": "node tools/check-deliverables.mjs"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.24.5",
+    "prismjs": "^1.30.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-react": "^6.0.3",
+    "eslint": "^10.6.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "prettier": "^3.9.9",
+    "vite": "^8.1.1"
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+</head>
+<body>
+    <h2>Function Type</h2>
+    <button onClick="greet()">Function Declaration</button>
+    <button onClick="addition()">Function Expression</button>
+    <button onClick="multiply()">Arrow Function</button>
+    <p id="output">Click button to see output</p>
+    <script>function greet(){
+    document.getElementById("output").textContent="Hello! this is declaration function";
+}
+
+const addition= function(){
+    let a=15;
+    let b=10;
+    document.getElementById("output").textContent="addition = "+(a+b);
+}
+
+const multiply= ()=>{
+    let x = 5;
+    let y = 10;
+    document.getElementById("output").textContent="Multiplication = "+(x*y);
+}
+</script>
+</body>
+</html>

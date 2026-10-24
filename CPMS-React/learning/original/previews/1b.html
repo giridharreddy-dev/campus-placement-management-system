@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selectors</title>
+</head>
+<body>
+    <h1 id="heading">JavaScript DOM Selectors</h1>
+    <p class="message">Paragraph One</p>
+    <p class="message">Paragraph Two</p>
+    <button>Click Me</button>
+    <script>// Select by ID
+let heading = document.getElementById("heading");
+
+// Select by Class
+let paragraph = document.getElementsByClassName("message");
+
+// Select by Tag
+let button = document.getElementsByTagName("button");
+
+// Query Selector
+let firstPara = document.querySelector(".message");
+
+// Query Selector All
+let allPara = document.querySelectorAll(".message");
+
+console.log(heading);
+
+console.log(paragraph);
+
+console.log(button);
+
+console.log(firstPara);
+
+console.log(allPara);</script>
+</body>
+</html>

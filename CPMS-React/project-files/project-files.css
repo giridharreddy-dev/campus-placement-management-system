@@ -1,0 +1,126 @@
+.files-main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 32px 24px 70px;
+}
+.files-main > h1 {
+  max-width: 950px;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2;
+}
+.files-main p {
+  line-height: 1.7;
+}
+.files-sets {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 28px 0;
+}
+.files-sets button {
+  display: grid;
+  gap: 10px;
+  text-align: left;
+  padding: 22px;
+}
+.files-sets strong {
+  font-size: 18px;
+}
+.files-sets button[aria-pressed='true'] {
+  background: #096c60;
+  color: white;
+}
+.files-layout {
+  display: grid;
+  grid-template-columns: 290px minmax(0, 1fr);
+  border: 1px solid #cdd9d3;
+  border-radius: 12px;
+  background: white;
+  overflow: hidden;
+}
+.files-sidebar {
+  padding: 20px;
+  background: #f1f5f0;
+  max-height: 800px;
+  overflow: auto;
+}
+.files-sidebar label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.files-sidebar input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #a7bfb4;
+  border-radius: 6px;
+  font: inherit;
+}
+.files-tree {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 12px;
+}
+.files-tree li {
+  margin: 5px 0;
+}
+.files-tree summary {
+  cursor: pointer;
+  padding: 7px 0;
+  overflow-wrap: anywhere;
+}
+.files-tree details {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.files-tree button {
+  border: 0;
+  background: transparent;
+  padding: 7px;
+  text-align: left;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+.files-tree button[aria-current] {
+  background: #d2e7dc;
+  color: #124536;
+  font-weight: 700;
+}
+.files-preview {
+  min-width: 0;
+  padding: 24px;
+}
+.files-preview h2 {
+  font-size: 17px;
+  overflow-wrap: anywhere;
+}
+.files-preview .lab-source pre {
+  max-height: 720px;
+  color: #e0efe6;
+  padding: 18px;
+  overflow: auto;
+  font-size: 13px;
+  line-height: 1.65;
+  white-space: pre;
+}
+.files-page :is(button, summary, input, a):focus-visible {
+  outline: 3px solid #b96421;
+  outline-offset: 3px;
+}
+@media (max-width: 800px) {
+  .files-main {
+    padding: 24px 14px 50px;
+  }
+  .files-sets,
+  .files-layout {
+    grid-template-columns: 1fr;
+  }
+  .files-sidebar {
+    max-height: 360px;
+  }
+  .files-preview {
+    padding: 16px;
+  }
+}

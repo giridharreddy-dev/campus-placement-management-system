@@ -1,0 +1,531 @@
+{
+  "description": "Student original lab sources; only the 4e database password is hidden.",
+  "programs": {
+    "1a": {
+      "id": "1a",
+      "files": [
+        {
+          "name": "index.html",
+          "origin": "FSD/Experiment-1/1a/index.html",
+          "code": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>JavaScript Linking</title>\r\n</head>\r\n<body>\r\n    <h1>JavaScript Linked Successfully</h1>\r\n\r\n    <script src=\"script.js\"></script>\r\n</body>\r\n</html>\r\n",
+          "formattedCode": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>JavaScript Linking</title>\n  </head>\n  <body>\n    <h1>JavaScript Linked Successfully</h1>\n\n    <script src=\"script.js\"></script>\n  </body>\n</html>\n",
+          "sha256": "ec95a1330d11408fefcc32723544b13803cc7ae58bd41eec446dff477842fca3",
+          "redacted": false
+        },
+        {
+          "name": "script.js",
+          "origin": "FSD/Experiment-1/1a/script.js",
+          "code": "console.log(\"JavaScript File Connected Successfully\");\r\n\r\nalert(\"Welcome to JavaScript\");",
+          "formattedCode": "console.log('JavaScript File Connected Successfully');\n\nalert('Welcome to JavaScript');\n",
+          "sha256": "7b47627f57de2ba4c64bf9ea30843855b7d082da562d0d5d49abf48c5c6709de",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "fefcbfb1537026de29ed268a3667257febccb906387c1d203362c3c4d2be9f0e"
+    },
+    "1b": {
+      "id": "1b",
+      "files": [
+        {
+          "name": "index.html",
+          "origin": "FSD/Experiment-1/1b/index.html",
+          "code": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>DOM Selectors</title>\r\n</head>\r\n<body>\r\n    <h1 id=\"heading\">JavaScript DOM Selectors</h1>\r\n    <p class=\"message\">Paragraph One</p>\r\n    <p class=\"message\">Paragraph Two</p>\r\n    <button>Click Me</button>\r\n    <script src=\"script.js\"></script>\r\n</body>\r\n</html>",
+          "formattedCode": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>DOM Selectors</title>\n  </head>\n  <body>\n    <h1 id=\"heading\">JavaScript DOM Selectors</h1>\n    <p class=\"message\">Paragraph One</p>\n    <p class=\"message\">Paragraph Two</p>\n    <button>Click Me</button>\n    <script src=\"script.js\"></script>\n  </body>\n</html>\n",
+          "sha256": "6c6a76da589bf2951f26dc10541825ed6f6a8bf4966eb00cb89d2defdd649a55",
+          "redacted": false
+        },
+        {
+          "name": "script.js",
+          "origin": "FSD/Experiment-1/1b/script.js",
+          "code": "// Select by ID\r\nlet heading = document.getElementById(\"heading\");\r\n\r\n// Select by Class\r\nlet paragraph = document.getElementsByClassName(\"message\");\r\n\r\n// Select by Tag\r\nlet button = document.getElementsByTagName(\"button\");\r\n\r\n// Query Selector\r\nlet firstPara = document.querySelector(\".message\");\r\n\r\n// Query Selector All\r\nlet allPara = document.querySelectorAll(\".message\");\r\n\r\nconsole.log(heading);\r\n\r\nconsole.log(paragraph);\r\n\r\nconsole.log(button);\r\n\r\nconsole.log(firstPara);\r\n\r\nconsole.log(allPara);",
+          "formattedCode": "// Select by ID\nlet heading = document.getElementById('heading');\n\n// Select by Class\nlet paragraph = document.getElementsByClassName('message');\n\n// Select by Tag\nlet button = document.getElementsByTagName('button');\n\n// Query Selector\nlet firstPara = document.querySelector('.message');\n\n// Query Selector All\nlet allPara = document.querySelectorAll('.message');\n\nconsole.log(heading);\n\nconsole.log(paragraph);\n\nconsole.log(button);\n\nconsole.log(firstPara);\n\nconsole.log(allPara);\n",
+          "sha256": "ed9c3bc393ab23c574b01a102c8d0a5b7f2dfa275d48d92c12263eb9ac1d9cd7",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "ca87d335cd0bad9bd74bb4a7add145855a0d7cda2223de8fc5e0741473a61e88"
+    },
+    "1c": {
+      "id": "1c",
+      "files": [
+        {
+          "name": "index.html",
+          "origin": "FSD/Experiment-1/1c/index.html",
+          "code": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Event Listener</title>\r\n</head>\r\n<body>\r\n    <h2 id=\"msg\">Click the button</h2>\r\n    <button id=\"btn\">Click Me</button>\r\n    <button id=\"btn2\">Click Me Too</button>\r\n    <script src=\"script.js\"></script>\r\n</body>\r\n</html>\r\n",
+          "formattedCode": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Event Listener</title>\n  </head>\n  <body>\n    <h2 id=\"msg\">Click the button</h2>\n    <button id=\"btn\">Click Me</button>\n    <button id=\"btn2\">Click Me Too</button>\n    <script src=\"script.js\"></script>\n  </body>\n</html>\n",
+          "sha256": "7921fab10c7d77a80aca9262823b5dae3216cde22f0823b21170507efa8cc159",
+          "redacted": false
+        },
+        {
+          "name": "script.js",
+          "origin": "FSD/Experiment-1/1c/script.js",
+          "code": "let button = document.getElementById(\"btn\")\r\n\r\nbutton.addEventListener(\"click\", function() {\r\n    document.getElementById(\"msg\").textContent=\"Button Clicked Sucessfully!\";\r\n});\r\n\r\nlet button2 = document.getElementById(\"btn2\")\r\n\r\nbutton2.addEventListener(\"click\", function() {\r\n    document.body.style.backgroundColor = \"lightblue\";\r\n});\r\n",
+          "formattedCode": "let button = document.getElementById('btn');\n\nbutton.addEventListener('click', function () {\n  document.getElementById('msg').textContent = 'Button Clicked Sucessfully!';\n});\n\nlet button2 = document.getElementById('btn2');\n\nbutton2.addEventListener('click', function () {\n  document.body.style.backgroundColor = 'lightblue';\n});\n",
+          "sha256": "40d468c89919750a17004171310703ec574d454d3c1483bbf76b35c157d202d5",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "83a0b9eccf70cdbf37ac5acae63588c86fd5bc7e09767c55a8137ba9e20da789"
+    },
+    "1d": {
+      "id": "1d",
+      "files": [
+        {
+          "name": "index.html",
+          "origin": "FSD/Experiment-1/1d/index.html",
+          "code": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Button Click Event</title>\r\n</head>\r\n<body>\r\n    <h2 id=\"msg\">Click the button</h2>\r\n    <button id=\"btn\">Click Me</button>\r\n    <button id=\"btn2\">Click Me Too</button>\r\n    <button id=\"btn3\">Click Me Three</button>\r\n    <p id=\"output\">Click button to see output</p>\r\n    <script src=\"script.js\"></script>\r\n</body>\r\n</html>\r\n",
+          "formattedCode": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Button Click Event</title>\n  </head>\n  <body>\n    <h2 id=\"msg\">Click the button</h2>\n    <button id=\"btn\">Click Me</button>\n    <button id=\"btn2\">Click Me Too</button>\n    <button id=\"btn3\">Click Me Three</button>\n    <p id=\"output\">Click button to see output</p>\n    <script src=\"script.js\"></script>\n  </body>\n</html>\n",
+          "sha256": "e03e1fcb0554ea68e27eebf66465171c07befc317d796104f191c5b0dd915dcf",
+          "redacted": false
+        },
+        {
+          "name": "script.js",
+          "origin": "FSD/Experiment-1/1d/script.js",
+          "code": "let button=document.getElementById(\"btn\");\r\n\r\nbutton.addEventListener(\"click\",function(){\r\n    document.getElementById(\"msg\").textContent=\"Button clicked sucessfully\";\r\n});\r\n\r\nlet button2=document.getElementById(\"btn2\");\r\n\r\nbutton2.addEventListener(\"click\",function(){\r\n    document.body.style.backgroundColor=\"lightblue\";\r\n    document.getElementById(\"output\").textContent = \"Button 2 Clicked!\";\r\n});\r\n\r\nlet button3=document.getElementById(\"btn3\");\r\n\r\nbutton3.addEventListener(\"click\",function(){\r\n    document.body.style.backgroundColor=\"lightgreen\";\r\n    document.getElementById(\"output\").textContent=\"Button 3 Clicked!\";\r\n});\r\n",
+          "formattedCode": "let button = document.getElementById('btn');\n\nbutton.addEventListener('click', function () {\n  document.getElementById('msg').textContent = 'Button clicked sucessfully';\n});\n\nlet button2 = document.getElementById('btn2');\n\nbutton2.addEventListener('click', function () {\n  document.body.style.backgroundColor = 'lightblue';\n  document.getElementById('output').textContent = 'Button 2 Clicked!';\n});\n\nlet button3 = document.getElementById('btn3');\n\nbutton3.addEventListener('click', function () {\n  document.body.style.backgroundColor = 'lightgreen';\n  document.getElementById('output').textContent = 'Button 3 Clicked!';\n});\n",
+          "sha256": "2c13621b3dc3913391210d7f5ede99d365f6686724de8fc663e035b996a86fd1",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "691de74946119d4c27d27b4878515aa24e2964a63156dbe99e98da2ab04115fd"
+    },
+    "1e": {
+      "id": "1e",
+      "files": [
+        {
+          "name": "index.html",
+          "origin": "FSD/Experiment-1/1e/index.html",
+          "code": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>JavaScript Function</title>\r\n</head>\r\n<body>\r\n    <h2>Function Type</h2>\r\n    <button onClick=\"greet()\">Function Declaration</button>\r\n    <button onClick=\"addition()\">Function Expression</button>\r\n    <button onClick=\"multiply()\">Arrow Function</button>\r\n    <p id=\"output\">Click button to see output</p>\r\n    <script src=\"script.js\"></script>\r\n</body>\r\n</html>\r\n",
+          "formattedCode": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>JavaScript Function</title>\n  </head>\n  <body>\n    <h2>Function Type</h2>\n    <button onClick=\"greet()\">Function Declaration</button>\n    <button onClick=\"addition()\">Function Expression</button>\n    <button onClick=\"multiply()\">Arrow Function</button>\n    <p id=\"output\">Click button to see output</p>\n    <script src=\"script.js\"></script>\n  </body>\n</html>\n",
+          "sha256": "ced2b3c90c18a73f70f85e4a67699a79ecff4989cf23bfd673ddc94315003ecb",
+          "redacted": false
+        },
+        {
+          "name": "script.js",
+          "origin": "FSD/Experiment-1/1e/script.js",
+          "code": "function greet(){\r\n    document.getElementById(\"output\").textContent=\"Hello! this is declaration function\";\r\n}\r\n\r\nconst addition= function(){\r\n    let a=15;\r\n    let b=10;\r\n    document.getElementById(\"output\").textContent=\"addition = \"+(a+b);\r\n}\r\n\r\nconst multiply= ()=>{\r\n    let x = 5;\r\n    let y = 10;\r\n    document.getElementById(\"output\").textContent=\"Multiplication = \"+(x*y);\r\n}\r\n",
+          "formattedCode": "function greet() {\n  document.getElementById('output').textContent =\n    'Hello! this is declaration function';\n}\n\nconst addition = function () {\n  let a = 15;\n  let b = 10;\n  document.getElementById('output').textContent = 'addition = ' + (a + b);\n};\n\nconst multiply = () => {\n  let x = 5;\n  let y = 10;\n  document.getElementById('output').textContent = 'Multiplication = ' + x * y;\n};\n",
+          "sha256": "a46ac18a437b1d8327392b43dd4c9d1f4efe87c6ed8ff6faed1b0dc8884e2dbb",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "118bcc2aa719436f5b5dbeae9d59c8a2f783f6fab9a9af52850ca9e22cb07ed9"
+    },
+    "2a": {
+      "id": "2a",
+      "files": [
+        {
+          "name": "2a.jsx",
+          "origin": "src/Experiments2/2a.jsx",
+          "code": "import React, { Component } from \"react\";\n\nclass App extends Component {\n  constructor() {\n    super();\n    this.state = {\n      count: 0,\n    };\n  }\n  increment = () => {\n    this.setState({\n      count: this.state.count + 1,\n    });\n  };\n  decrement = () => {\n    this.setState({\n      count: this.state.count - 1,\n    });\n  };\n  reset = () => {\n    this.setState({\n      count: 0,\n    });\n  };\n  render() {\n    return (\n      <div style={{ textAlign: \"center\", marginTop: \"50px\" }}>\n        <h1>Campus Placement Dashboard</h1>\n        <h2>Applications Submitted</h2>\n        <h1>{this.state.count}</h1>\n        <button onClick={this.increment}>Increase</button>\n        &nbsp;\n        <button onClick={this.decrement}>Decrease</button>\n        &nbsp;\n        <button onClick={this.reset}>Reset</button>\n      </div>\n    );\n  }\n}\n\nexport default App;\n",
+          "formattedCode": "import React, { Component } from 'react';\n\nclass App extends Component {\n  constructor() {\n    super();\n    this.state = {\n      count: 0,\n    };\n  }\n  increment = () => {\n    this.setState({\n      count: this.state.count + 1,\n    });\n  };\n  decrement = () => {\n    this.setState({\n      count: this.state.count - 1,\n    });\n  };\n  reset = () => {\n    this.setState({\n      count: 0,\n    });\n  };\n  render() {\n    return (\n      <div style={{ textAlign: 'center', marginTop: '50px' }}>\n        <h1>Campus Placement Dashboard</h1>\n        <h2>Applications Submitted</h2>\n        <h1>{this.state.count}</h1>\n        <button onClick={this.increment}>Increase</button>\n        &nbsp;\n        <button onClick={this.decrement}>Decrease</button>\n        &nbsp;\n        <button onClick={this.reset}>Reset</button>\n      </div>\n    );\n  }\n}\n\nexport default App;\n",
+          "sha256": "65c7559e2d51c998d877b23c662570e76ede24a4b78d3685fd98c4f852c68238",
+          "redacted": false
+        },
+        {
+          "name": "2a.module.css",
+          "origin": "src/Experiments2/2a.module.css",
+          "code": "",
+          "formattedCode": "",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "0ec2242a1f4cb41e0b84b178caef829dc8a3df0d0bc1f474ecdac4b5fd351581"
+    },
+    "2b": {
+      "id": "2b",
+      "files": [
+        {
+          "name": "2b.jsx",
+          "origin": "src/Experiments2/2b.jsx",
+          "code": "import { useState } from \"react\";\nimport styles from \"./2b.module.css\";\n\nfunction App() {\n  const [count, setCount] = useState(0);\n\n  const increaseCount = () => {\n    setCount(count + 1);\n  };\n\n  return (\n    <div className={styles[\"container\"]}>\n      <h1>Campus Placement Dashboard</h1>\n\n      <div className={styles[\"card\"]}>\n        <h2>Applications Submitted</h2>\n\n        <p className={styles[\"count\"]}>{count}</p>\n\n        <button onClick={increaseCount}>Submit Application</button>\n      </div>\n    </div>\n  );\n}\n\nexport default App;\n",
+          "formattedCode": "import { useState } from 'react';\nimport styles from './2b.module.css';\n\nfunction App() {\n  const [count, setCount] = useState(0);\n\n  const increaseCount = () => {\n    setCount(count + 1);\n  };\n\n  return (\n    <div className={styles['container']}>\n      <h1>Campus Placement Dashboard</h1>\n\n      <div className={styles['card']}>\n        <h2>Applications Submitted</h2>\n\n        <p className={styles['count']}>{count}</p>\n\n        <button onClick={increaseCount}>Submit Application</button>\n      </div>\n    </div>\n  );\n}\n\nexport default App;\n",
+          "sha256": "4f9d224de1b9823bc8f726c6be0633e6b800d932b633eeb781bbdabe74913db7",
+          "redacted": false
+        },
+        {
+          "name": "2b.module.css",
+          "origin": "src/Experiments2/2b.module.css",
+          "code": "body {\n  margin: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  background: #f4f6f9;\n}\n\n.container {\n  text-align: center;\n  padding: 50px;\n}\n\n.card {\n  width: 350px;\n  margin: auto;\n  background: white;\n  padding: 30px;\n  border-radius: 10px;\n  box-shadow: 0 4px 10px rgba(0,0,0,0.15);\n}\n\n.count {\n  font-size: 48px;\n  color: #1565c0;\n  margin: 20px 0;\n  font-weight: bold;\n}\n\nbutton {\n  background: #1565c0;\n  color: white;\n  border: none;\n  padding: 12px 20px;\n  cursor: pointer;\n  border-radius: 6px;\n  font-size: 16px;\n}\n\nbutton:hover {\n  background: #0d47a1;\n}\n",
+          "formattedCode": "body {\n  margin: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  background: #f4f6f9;\n}\n\n.container {\n  text-align: center;\n  padding: 50px;\n}\n\n.card {\n  width: 350px;\n  margin: auto;\n  background: white;\n  padding: 30px;\n  border-radius: 10px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);\n}\n\n.count {\n  font-size: 48px;\n  color: #1565c0;\n  margin: 20px 0;\n  font-weight: bold;\n}\n\nbutton {\n  background: #1565c0;\n  color: white;\n  border: none;\n  padding: 12px 20px;\n  cursor: pointer;\n  border-radius: 6px;\n  font-size: 16px;\n}\n\nbutton:hover {\n  background: #0d47a1;\n}\n",
+          "sha256": "cbe92991f42b6b2f0bc64cb5a7e31eb40754fd5dd1adcd6c899a32013b4e06c0",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "c20922b46a37e81b3e8e39ab229727d30bb548dd97fa859edfaa6dd3524bf2a8"
+    },
+    "2c": {
+      "id": "2c",
+      "files": [
+        {
+          "name": "2c.jsx",
+          "origin": "src/Experiments2/2c.jsx",
+          "code": "import { useState } from \"react\";\nimport styles from \"./2c.module.css\";\n\nfunction App() {\n  const [message, setMessage] = useState(\n    \"Choose an action from the Placement Dashboard.\",\n  );\n\n  const applyPlacement = () => {\n    setMessage(\"✅ Application submitted successfully.\");\n  };\n\n  const viewResults = () => {\n    setMessage(\"📊 Displaying placement statistics.\");\n  };\n\n  const resetDashboard = () => {\n    setMessage(\"Choose an action from the Placement Dashboard.\");\n  };\n\n  return (\n    <div className={styles[\"container\"]}>\n      <h1>Campus Placement Dashboard</h1>\n\n      <p className={styles[\"message\"]}>{message}</p>\n\n      <div className={styles[\"button-group\"]}>\n        <button onClick={applyPlacement}>Apply</button>\n\n        <button onClick={viewResults}>View Results</button>\n\n        <button onClick={resetDashboard}>Reset</button>\n      </div>\n    </div>\n  );\n}\n\nexport default App;\n",
+          "formattedCode": "import { useState } from 'react';\nimport styles from './2c.module.css';\n\nfunction App() {\n  const [message, setMessage] = useState(\n    'Choose an action from the Placement Dashboard.',\n  );\n\n  const applyPlacement = () => {\n    setMessage('✅ Application submitted successfully.');\n  };\n\n  const viewResults = () => {\n    setMessage('📊 Displaying placement statistics.');\n  };\n\n  const resetDashboard = () => {\n    setMessage('Choose an action from the Placement Dashboard.');\n  };\n\n  return (\n    <div className={styles['container']}>\n      <h1>Campus Placement Dashboard</h1>\n\n      <p className={styles['message']}>{message}</p>\n\n      <div className={styles['button-group']}>\n        <button onClick={applyPlacement}>Apply</button>\n\n        <button onClick={viewResults}>View Results</button>\n\n        <button onClick={resetDashboard}>Reset</button>\n      </div>\n    </div>\n  );\n}\n\nexport default App;\n",
+          "sha256": "7b2f429e56df5ecb8e3672590c170da85df75ddae9b9db2a3c0489c005b9876b",
+          "redacted": false
+        },
+        {
+          "name": "2c.module.css",
+          "origin": "src/Experiments2/2c.module.css",
+          "code": "body {\n  margin: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  background: #eef2f7;\n}\n\n.container {\n  text-align: center;\n  padding: 50px;\n}\n\n\n.message {\n  font-size: 20px;\n  margin: 30px 0;\n  color: #1565c0;\n  font-weight: bold;\n}\n\n.button-group {\n  display: flex;\n  justify-content: center;\n  gap: 15px;\n}\n\nbutton {\n  padding: 12px 18px;\n  border: none;\n  background: #1565c0;\n  color: white;\n  border-radius: 6px;\n  cursor: pointer;\n  font-size: 15px;\n}\n\nbutton:hover {\n  background: #0d47a1;\n}\n",
+          "formattedCode": "body {\n  margin: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  background: #eef2f7;\n}\n\n.container {\n  text-align: center;\n  padding: 50px;\n}\n\n.message {\n  font-size: 20px;\n  margin: 30px 0;\n  color: #1565c0;\n  font-weight: bold;\n}\n\n.button-group {\n  display: flex;\n  justify-content: center;\n  gap: 15px;\n}\n\nbutton {\n  padding: 12px 18px;\n  border: none;\n  background: #1565c0;\n  color: white;\n  border-radius: 6px;\n  cursor: pointer;\n  font-size: 15px;\n}\n\nbutton:hover {\n  background: #0d47a1;\n}\n",
+          "sha256": "5f792ccc9418bdd4b1330786ca951e293b8033e2770625fc68b326ac31137aae",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "718bdf7bd11c7307eef36f4c53f28d75eeb5b5f13b4d82d84078ab87a1154c7f"
+    },
+    "2d": {
+      "id": "2d",
+      "files": [
+        {
+          "name": "2d.jsx",
+          "origin": "src/Experiments2/2d.jsx",
+          "code": "import { useState } from \"react\";\nimport styles from \"./2d.module.css\";\n\nfunction App() {\n  const [isPlaced, setIsPlaced] = useState(false);\n\n  const togglePlacementStatus = () => {\n    setIsPlaced(!isPlaced);\n  };\n\n  return (\n    <div className={styles[\"container\"]}>\n      <h1>Campus Placement Dashboard</h1>\n\n      {isPlaced ? (\n        <div className={`${styles[\"status-card\"]} ${styles.success}`}>\n          <h2>🎉 Congratulations!</h2>\n          <p>You have been placed successfully.</p>\n        </div>\n      ) : (\n        <div className={`${styles[\"status-card\"]} ${styles.pending}`}>\n          <h2>⏳ Placement Pending</h2>\n          <p>Keep preparing and applying for opportunities.</p>\n        </div>\n      )}\n\n      <button onClick={togglePlacementStatus}>Toggle Placement Status</button>\n    </div>\n  );\n}\n\nexport default App;\n",
+          "formattedCode": "import { useState } from 'react';\nimport styles from './2d.module.css';\n\nfunction App() {\n  const [isPlaced, setIsPlaced] = useState(false);\n\n  const togglePlacementStatus = () => {\n    setIsPlaced(!isPlaced);\n  };\n\n  return (\n    <div className={styles['container']}>\n      <h1>Campus Placement Dashboard</h1>\n\n      {isPlaced ? (\n        <div className={`${styles['status-card']} ${styles.success}`}>\n          <h2>🎉 Congratulations!</h2>\n          <p>You have been placed successfully.</p>\n        </div>\n      ) : (\n        <div className={`${styles['status-card']} ${styles.pending}`}>\n          <h2>⏳ Placement Pending</h2>\n          <p>Keep preparing and applying for opportunities.</p>\n        </div>\n      )}\n\n      <button onClick={togglePlacementStatus}>Toggle Placement Status</button>\n    </div>\n  );\n}\n\nexport default App;\n",
+          "sha256": "dfc9a369b70c82593c43ec1be24de4393773716ab8814cb63890bea4ab921094",
+          "redacted": false
+        },
+        {
+          "name": "2d.module.css",
+          "origin": "src/Experiments2/2d.module.css",
+          "code": "body {\n  margin: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  background: #eef2f7;\n}\n\n.container {\n  text-align: center;\n  padding: 50px;\n}\n\n.status-card {\n  width: 420px;\n  margin: 20px auto;\n  padding: 25px;\n  border-radius: 10px;\n  color: white;\n}\n\n.success {\n  background: #2e7d32;\n}\n\n.pending {\n  background: #ef6c00;\n}\n\nbutton {\n  margin-top: 20px;\n  padding: 12px 20px;\n  border: none;\n  background: #1565c0;\n  color: white;\n  border-radius: 6px;\n  cursor: pointer;\n  font-size: 16px;\n}\n\nbutton:hover {\n  background: #0d47a1;\n}\n",
+          "formattedCode": "body {\n  margin: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  background: #eef2f7;\n}\n\n.container {\n  text-align: center;\n  padding: 50px;\n}\n\n.status-card {\n  width: 420px;\n  margin: 20px auto;\n  padding: 25px;\n  border-radius: 10px;\n  color: white;\n}\n\n.success {\n  background: #2e7d32;\n}\n\n.pending {\n  background: #ef6c00;\n}\n\nbutton {\n  margin-top: 20px;\n  padding: 12px 20px;\n  border: none;\n  background: #1565c0;\n  color: white;\n  border-radius: 6px;\n  cursor: pointer;\n  font-size: 16px;\n}\n\nbutton:hover {\n  background: #0d47a1;\n}\n",
+          "sha256": "7187e4cf6f7b507d5291607d0068ffd54dc417f64e52ab62a1a86ce688abfe30",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "bfbd1122714d1d57342edef4faab3f5df75071b4af1236aaa9ec714e9bc3d861"
+    },
+    "2e": {
+      "id": "2e",
+      "files": [
+        {
+          "name": "2e.jsx",
+          "origin": "src/Experiments2/2e.jsx",
+          "code": "import styles from \"./2e.module.css\";\n\nfunction App() {\n  const dashboardTitle = \"Campus Placement Dashboard\";\n  const welcomeMessage = \"Welcome to the Placement Portal\";\n  const companyName = \"OpenAI Technologies\";\n  const status = \"Registration Open\";\n\n  return (\n    <div className={styles[\"container\"]}>\n      <h1>{dashboardTitle}</h1>\n\n      <h2>{welcomeMessage}</h2>\n\n      <div className={styles[\"card\"]}>\n        <p>\n          Company: <strong>{companyName}</strong>\n        </p>\n\n        <p>\n          Current Status: <strong>{status}</strong>\n        </p>\n\n        <p>\"Success is where preparation meets opportunity.\"</p>\n      </div>\n    </div>\n  );\n}\n\nexport default App;\n",
+          "formattedCode": "import styles from './2e.module.css';\n\nfunction App() {\n  const dashboardTitle = 'Campus Placement Dashboard';\n  const welcomeMessage = 'Welcome to the Placement Portal';\n  const companyName = 'OpenAI Technologies';\n  const status = 'Registration Open';\n\n  return (\n    <div className={styles['container']}>\n      <h1>{dashboardTitle}</h1>\n\n      <h2>{welcomeMessage}</h2>\n\n      <div className={styles['card']}>\n        <p>\n          Company: <strong>{companyName}</strong>\n        </p>\n\n        <p>\n          Current Status: <strong>{status}</strong>\n        </p>\n\n        <p>\"Success is where preparation meets opportunity.\"</p>\n      </div>\n    </div>\n  );\n}\n\nexport default App;\n",
+          "sha256": "898436f1095796e99451af4661546f90b44052d9d0b3410ee3319123791f1aa9",
+          "redacted": false
+        },
+        {
+          "name": "2e.module.css",
+          "origin": "src/Experiments2/2e.module.css",
+          "code": "body {\n  margin: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  background: #eef2f7;\n}\n\n.container {\n  text-align: center;\n  padding: 50px;\n}\n\n.card {\n  width: 420px;\n  margin: auto;\n  background: white;\n  padding: 25px;\n  border-radius: 10px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);\n}\n\nh1 {\n  color: #1565c0;\n}\n\nh2 {\n  color: #444;\n}\n",
+          "formattedCode": "body {\n  margin: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  background: #eef2f7;\n}\n\n.container {\n  text-align: center;\n  padding: 50px;\n}\n\n.card {\n  width: 420px;\n  margin: auto;\n  background: white;\n  padding: 25px;\n  border-radius: 10px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);\n}\n\nh1 {\n  color: #1565c0;\n}\n\nh2 {\n  color: #444;\n}\n",
+          "sha256": "d0b3975c357fd2c2be55bb3a336fb002213e53f524c20d2588b98e64ac6d9942",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "867b523e025a5ec14f385a92794037ccc31ab18440e0c67ebe61f3a719902d80"
+    },
+    "3a": {
+      "id": "3a",
+      "files": [
+        {
+          "name": "3a.jsx",
+          "origin": "src/Experiments3/3a.jsx",
+          "code": "import { useState } from \"react\";\nimport \"./3a.css\";\n\nfunction App() {\n  const [applications, setApplications] = useState(0);\n\n  const increaseApplications = () => {\n    setApplications(applications + 1);\n  };\n\n  const decreaseApplications = () => {\n    if (applications > 0) {\n      setApplications(applications - 1);\n    }\n  };\n\n  const resetApplications = () => {\n    setApplications(0);\n  };\n\n  return (\n    <div className=\"container\">\n      <h1>Campus Placement Dashboard</h1>\n\n      <div className=\"card\">\n        <h2>Applications Submitted</h2>\n\n        <p className=\"count\">{applications}</p>\n\n        <div className=\"button-group\">\n          <button onClick={decreaseApplications}>−</button>\n\n          <button onClick={increaseApplications}>+</button>\n\n          <button onClick={resetApplications}>Reset</button>\n        </div>\n      </div>\n    </div>\n  );\n}\n\nexport default App;\n",
+          "formattedCode": "import { useState } from 'react';\nimport './3a.css';\n\nfunction App() {\n  const [applications, setApplications] = useState(0);\n\n  const increaseApplications = () => {\n    setApplications(applications + 1);\n  };\n\n  const decreaseApplications = () => {\n    if (applications > 0) {\n      setApplications(applications - 1);\n    }\n  };\n\n  const resetApplications = () => {\n    setApplications(0);\n  };\n\n  return (\n    <div className=\"container\">\n      <h1>Campus Placement Dashboard</h1>\n\n      <div className=\"card\">\n        <h2>Applications Submitted</h2>\n\n        <p className=\"count\">{applications}</p>\n\n        <div className=\"button-group\">\n          <button onClick={decreaseApplications}>−</button>\n\n          <button onClick={increaseApplications}>+</button>\n\n          <button onClick={resetApplications}>Reset</button>\n        </div>\n      </div>\n    </div>\n  );\n}\n\nexport default App;\n",
+          "sha256": "7d592123d0054829c6ab65b92fc3753c4988e038ada2cbfc5d1c7f7dc26572f8",
+          "redacted": false
+        },
+        {
+          "name": "3a.css",
+          "origin": "src/Experiments3/3a.css",
+          "code": "body {\n  margin: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  background: #eef2f7;\n}\n\n.container {\n  text-align: center;\n  padding: 50px;\n}\n\n.card {\n  width: 400px;\n  margin: 30px auto;\n  padding: 30px;\n  background: white;\n  border-radius: 10px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n\n.count {\n  font-size: 50px;\n  font-weight: bold;\n  margin: 20px;\n}\n\n.button-group {\n  display: flex;\n  justify-content: center;\n  gap: 12px;\n}\n\nbutton {\n  padding: 10px 20px;\n  border: none;\n  border-radius: 6px;\n  background: #1565c0;\n  color: white;\n  font-size: 16px;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background: #0d47a1;\n}\n",
+          "formattedCode": "body {\n  margin: 0;\n  font-family: Arial, Helvetica, sans-serif;\n  background: #eef2f7;\n}\n\n.container {\n  text-align: center;\n  padding: 50px;\n}\n\n.card {\n  width: 400px;\n  margin: 30px auto;\n  padding: 30px;\n  background: white;\n  border-radius: 10px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n}\n\n.count {\n  font-size: 50px;\n  font-weight: bold;\n  margin: 20px;\n}\n\n.button-group {\n  display: flex;\n  justify-content: center;\n  gap: 12px;\n}\n\nbutton {\n  padding: 10px 20px;\n  border: none;\n  border-radius: 6px;\n  background: #1565c0;\n  color: white;\n  font-size: 16px;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background: #0d47a1;\n}\n",
+          "sha256": "61958a5264ba234941eaa30f147e45810ceadfeeec9a4e71e284346052a42103",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "f3c6bb767a97c50b82d3e9a8841b952bdbd154745efe69bde4c9ea186a326c0c"
+    },
+    "3b": {
+      "id": "3b",
+      "files": [
+        {
+          "name": "3b.jsx",
+          "origin": "src/Experiments3/3b.jsx",
+          "code": "import { useEffect, useState } from \"react\";\nimport \"./3b.css\";\n\nfunction Experiment3b() {\n  const [students, setStudents] = useState([]);\n  const [loading, setLoading] = useState(true);\n  const [error, setError] = useState(\"\");\n\n  useEffect(() => {\n    const fetchStudents = async () => {\n      try {\n        const response = await fetch(\n          \"https://jsonplaceholder.typicode.com/users\",\n        );\n\n        if (!response.ok) {\n          throw new Error(\"Failed to fetch student data.\");\n        }\n\n        const data = await response.json();\n\n        setStudents(data);\n      } catch (err) {\n        setError(err.message);\n      } finally {\n        setLoading(false);\n      }\n    };\n\n    fetchStudents();\n  }, []);\n\n  return (\n    <div className=\"experiment-container\">\n      <h1>Campus Placement Dashboard</h1>\n      <h2>Student Candidates</h2>\n      {loading && <p className=\"loading\">Loading student data...</p>}\n      {error && <p className=\"error\">{error}</p>}\n      {!loading && !error && (\n        <div className=\"student-grid\">\n          {students.map((student) => (\n            <div className=\"student-card\" key={student.id}>\n              <h3>{student.name}</h3>\n              <p><strong>Email:</strong> {student.email}</p>\n              <p><strong>Company:</strong> {student.company.name}</p>\n            </div>\n          ))}\n        </div>\n      )}\n    </div>\n  );\n}\n\nexport default Experiment3b;\n",
+          "formattedCode": "import { useEffect, useState } from 'react';\nimport './3b.css';\n\nfunction Experiment3b() {\n  const [students, setStudents] = useState([]);\n  const [loading, setLoading] = useState(true);\n  const [error, setError] = useState('');\n\n  useEffect(() => {\n    const fetchStudents = async () => {\n      try {\n        const response = await fetch(\n          'https://jsonplaceholder.typicode.com/users',\n        );\n\n        if (!response.ok) {\n          throw new Error('Failed to fetch student data.');\n        }\n\n        const data = await response.json();\n\n        setStudents(data);\n      } catch (err) {\n        setError(err.message);\n      } finally {\n        setLoading(false);\n      }\n    };\n\n    fetchStudents();\n  }, []);\n\n  return (\n    <div className=\"experiment-container\">\n      <h1>Campus Placement Dashboard</h1>\n      <h2>Student Candidates</h2>\n      {loading && <p className=\"loading\">Loading student data...</p>}\n      {error && <p className=\"error\">{error}</p>}\n      {!loading && !error && (\n        <div className=\"student-grid\">\n          {students.map((student) => (\n            <div className=\"student-card\" key={student.id}>\n              <h3>{student.name}</h3>\n              <p>\n                <strong>Email:</strong> {student.email}\n              </p>\n              <p>\n                <strong>Company:</strong> {student.company.name}\n              </p>\n            </div>\n          ))}\n        </div>\n      )}\n    </div>\n  );\n}\n\nexport default Experiment3b;\n",
+          "sha256": "1ee7aacf776ccf5d5cb342767d65ce64ef6d87770ace0e8475202d148fd71034",
+          "redacted": false
+        },
+        {
+          "name": "3b.css",
+          "origin": "src/Experiments3/3b.css",
+          "code": ".experiment-container {\n  min-height: 100vh;\n  padding: 40px;\n  background: #eef2f7;\n  text-align: center;\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.experiment-container h1 {\n  color: #1565c0;\n}\n\n.experiment-container h2 {\n  margin-bottom: 30px;\n}\n\n.loading {\n  font-size: 18px;\n  color: #555;\n}\n\n.error {\n  color: #c62828;\n  font-weight: bold;\n}\n\n.student-grid {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 20px;\n  max-width: 900px;\n  margin: auto;\n}\n\n.student-card {\n  background: white;\n  padding: 20px;\n  border-radius: 10px;\n  text-align: left;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);\n}\n\n.student-card h3 {\n  color: #1565c0;\n  margin-top: 0;\n}\n\n.student-card p {\n  margin: 8px 0;\n}\n",
+          "formattedCode": ".experiment-container {\n  min-height: 100vh;\n  padding: 40px;\n  background: #eef2f7;\n  text-align: center;\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.experiment-container h1 {\n  color: #1565c0;\n}\n\n.experiment-container h2 {\n  margin-bottom: 30px;\n}\n\n.loading {\n  font-size: 18px;\n  color: #555;\n}\n\n.error {\n  color: #c62828;\n  font-weight: bold;\n}\n\n.student-grid {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 20px;\n  max-width: 900px;\n  margin: auto;\n}\n\n.student-card {\n  background: white;\n  padding: 20px;\n  border-radius: 10px;\n  text-align: left;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);\n}\n\n.student-card h3 {\n  color: #1565c0;\n  margin-top: 0;\n}\n\n.student-card p {\n  margin: 8px 0;\n}\n",
+          "sha256": "33fecc85aaf36496e8853149f28c79d45cd569f112919cb9e7c508e7a0b82c5d",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "878482475fc49ffc147f4161394f816a3f2f122835294f6fbe854b6c35a93b3e"
+    },
+    "3c": {
+      "id": "3c",
+      "files": [
+        {
+          "name": "3c.jsx",
+          "origin": "src/Experiments3/3c.jsx",
+          "code": "import \"./3c.css\";\n\nfunction StudentProfile({ name, branch, cgpa, placementStatus }) {\n  return (\n    <div className=\"student-card\">\n      <h2>{name}</h2>\n      <p><strong>Branch:</strong> {branch}</p>\n      <p><strong>CGPA:</strong> {cgpa}</p>\n      <p>\n        <strong>Placement Status:</strong>{\" \"}\n        <span className=\"status\">{placementStatus}</span>\n      </p>\n    </div>\n  );\n}\n\nfunction PlacementDashboard() {\n  const student = {\n    name: \"Rahul Sharma\",\n    branch: \"Computer Science and Engineering\",\n    cgpa: 8.7,\n    placementStatus: \"Eligible\",\n  };\n\n  return (\n    <div className=\"dashboard\">\n      <h1>Campus Placement Dashboard</h1>\n      <p className=\"subtitle\">Student Placement Profile</p>\n      <StudentProfile\n        name={student.name}\n        branch={student.branch}\n        cgpa={student.cgpa}\n        placementStatus={student.placementStatus}\n      />\n    </div>\n  );\n}\n\nexport default PlacementDashboard;\n",
+          "formattedCode": "import './3c.css';\n\nfunction StudentProfile({ name, branch, cgpa, placementStatus }) {\n  return (\n    <div className=\"student-card\">\n      <h2>{name}</h2>\n      <p>\n        <strong>Branch:</strong> {branch}\n      </p>\n      <p>\n        <strong>CGPA:</strong> {cgpa}\n      </p>\n      <p>\n        <strong>Placement Status:</strong>{' '}\n        <span className=\"status\">{placementStatus}</span>\n      </p>\n    </div>\n  );\n}\n\nfunction PlacementDashboard() {\n  const student = {\n    name: 'Rahul Sharma',\n    branch: 'Computer Science and Engineering',\n    cgpa: 8.7,\n    placementStatus: 'Eligible',\n  };\n\n  return (\n    <div className=\"dashboard\">\n      <h1>Campus Placement Dashboard</h1>\n      <p className=\"subtitle\">Student Placement Profile</p>\n      <StudentProfile\n        name={student.name}\n        branch={student.branch}\n        cgpa={student.cgpa}\n        placementStatus={student.placementStatus}\n      />\n    </div>\n  );\n}\n\nexport default PlacementDashboard;\n",
+          "sha256": "16792624cc8bd7f9ee0ecb08729752fa9a6c5571c7e1384a7a9dbb7947dc7b97",
+          "redacted": false
+        },
+        {
+          "name": "3c.css",
+          "origin": "src/Experiments3/3c.css",
+          "code": ".dashboard {\n  min-height: 100vh;\n  padding: 50px;\n  background: #eef2f7;\n  text-align: center;\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.dashboard h1 {\n  color: #1565c0;\n}\n\n.subtitle {\n  color: #555;\n  font-size: 18px;\n  margin-bottom: 30px;\n}\n\n.student-card {\n  width: 450px;\n  margin: auto;\n  padding: 25px;\n  background: white;\n  border-radius: 10px;\n  text-align: left;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);\n}\n\n.student-card h2 {\n  margin-top: 0;\n  color: #1565c0;\n}\n\n.student-card p {\n  margin: 12px 0;\n}\n\n.status {\n  color: #2e7d32;\n  font-weight: bold;\n}\n",
+          "formattedCode": ".dashboard {\n  min-height: 100vh;\n  padding: 50px;\n  background: #eef2f7;\n  text-align: center;\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.dashboard h1 {\n  color: #1565c0;\n}\n\n.subtitle {\n  color: #555;\n  font-size: 18px;\n  margin-bottom: 30px;\n}\n\n.student-card {\n  width: 450px;\n  margin: auto;\n  padding: 25px;\n  background: white;\n  border-radius: 10px;\n  text-align: left;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);\n}\n\n.student-card h2 {\n  margin-top: 0;\n  color: #1565c0;\n}\n\n.student-card p {\n  margin: 12px 0;\n}\n\n.status {\n  color: #2e7d32;\n  font-weight: bold;\n}\n",
+          "sha256": "d185dbd1a5f67e070a6f91efabc1688c9f1b7f8d3ecbe0dd8e1d8cf5f6dfc701",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "dc57251d69a04b16b6485469002a51659f969299236cee6f76748ee5ca51da1c"
+    },
+    "3d": {
+      "id": "3d",
+      "files": [
+        {
+          "name": "3d.jsx",
+          "origin": "src/Experiments3/3d.jsx",
+          "code": "import { useState } from \"react\";\nimport \"./3d.css\";\n\nfunction Experiment3d() {\n  const [formData, setFormData] = useState({\n    name: \"\",\n    email: \"\",\n    branch: \"\",\n    cgpa: \"\",\n    role: \"\",\n    status: \"\",\n  });\n\n  const [submittedStudent, setSubmittedStudent] = useState(null);\n\n  const handleChange = (event) => {\n    const { name, value } = event.target;\n\n    setFormData({\n      ...formData,\n      [name]: value,\n    });\n  };\n\n  const handleSubmit = (event) => {\n    event.preventDefault();\n\n    setSubmittedStudent(formData);\n  };\n\n  return (\n    <div className=\"form-container\">\n      <h1>Campus Placement Dashboard</h1>\n\n      <div className=\"form-card\">\n        <h2>Student Placement Registration</h2>\n\n        <form onSubmit={handleSubmit}>\n          <label htmlFor=\"name\">Student Name</label>\n\n          <input\n            type=\"text\"\n            id=\"name\"\n            name=\"name\"\n            value={formData.name}\n            onChange={handleChange}\n            placeholder=\"Enter your name\"\n            required\n          />\n\n          <label htmlFor=\"email\">Email</label>\n\n          <input\n            type=\"email\"\n            id=\"email\"\n            name=\"email\"\n            value={formData.email}\n            onChange={handleChange}\n            placeholder=\"Enter your email\"\n            required\n          />\n\n          <label htmlFor=\"branch\">Branch</label>\n\n          <select\n            id=\"branch\"\n            name=\"branch\"\n            value={formData.branch}\n            onChange={handleChange}\n            required\n          >\n            <option value=\"\">Select Branch</option>\n\n            <option value=\"CSE\">Computer Science and Engineering</option>\n\n            <option value=\"ECE\">\n              Electronics and Communication Engineering\n            </option>\n\n            <option value=\"EEE\">Electrical and Electronics Engineering</option>\n\n            <option value=\"IT\">Information Technology</option>\n          </select>\n\n          <label htmlFor=\"cgpa\">CGPA</label>\n\n          <input\n            type=\"number\"\n            id=\"cgpa\"\n            name=\"cgpa\"\n            value={formData.cgpa}\n            onChange={handleChange}\n            placeholder=\"Enter CGPA\"\n            min=\"0\"\n            max=\"10\"\n            step=\"0.01\"\n            required\n          />\n\n          <label htmlFor=\"role\">Preferred Job Role</label>\n\n          <input\n            type=\"text\"\n            id=\"role\"\n            name=\"role\"\n            value={formData.role}\n            onChange={handleChange}\n            placeholder=\"Example: Software Developer\"\n            required\n          />\n\n          <label htmlFor=\"status\">Placement Status</label>\n\n          <select\n            id=\"status\"\n            name=\"status\"\n            value={formData.status}\n            onChange={handleChange}\n            required\n          >\n            <option value=\"\">Select Status</option>\n\n            <option value=\"Looking for opportunities\">\n              Looking for opportunities\n            </option>\n\n            <option value=\"Applied\">Applied</option>\n\n            <option value=\"Shortlisted\">Shortlisted</option>\n          </select>\n\n          <button type=\"submit\">Register for Placement</button>\n        </form>\n      </div>\n\n      {submittedStudent && (\n        <div className=\"result-card\">\n          <h2>Registration Successful</h2>\n\n          <p>\n            <strong>Name:</strong> {submittedStudent.name}\n          </p>\n\n          <p>\n            <strong>Email:</strong> {submittedStudent.email}\n          </p>\n\n          <p>\n            <strong>Branch:</strong> {submittedStudent.branch}\n          </p>\n\n          <p>\n            <strong>CGPA:</strong> {submittedStudent.cgpa}\n          </p>\n\n          <p>\n            <strong>Preferred Role:</strong> {submittedStudent.role}\n          </p>\n\n          <p>\n            <strong>Status:</strong> {submittedStudent.status}\n          </p>\n        </div>\n      )}\n    </div>\n  );\n}\n\nexport default Experiment3d;\n",
+          "formattedCode": "import { useState } from 'react';\nimport './3d.css';\n\nfunction Experiment3d() {\n  const [formData, setFormData] = useState({\n    name: '',\n    email: '',\n    branch: '',\n    cgpa: '',\n    role: '',\n    status: '',\n  });\n\n  const [submittedStudent, setSubmittedStudent] = useState(null);\n\n  const handleChange = (event) => {\n    const { name, value } = event.target;\n\n    setFormData({\n      ...formData,\n      [name]: value,\n    });\n  };\n\n  const handleSubmit = (event) => {\n    event.preventDefault();\n\n    setSubmittedStudent(formData);\n  };\n\n  return (\n    <div className=\"form-container\">\n      <h1>Campus Placement Dashboard</h1>\n\n      <div className=\"form-card\">\n        <h2>Student Placement Registration</h2>\n\n        <form onSubmit={handleSubmit}>\n          <label htmlFor=\"name\">Student Name</label>\n\n          <input\n            type=\"text\"\n            id=\"name\"\n            name=\"name\"\n            value={formData.name}\n            onChange={handleChange}\n            placeholder=\"Enter your name\"\n            required\n          />\n\n          <label htmlFor=\"email\">Email</label>\n\n          <input\n            type=\"email\"\n            id=\"email\"\n            name=\"email\"\n            value={formData.email}\n            onChange={handleChange}\n            placeholder=\"Enter your email\"\n            required\n          />\n\n          <label htmlFor=\"branch\">Branch</label>\n\n          <select\n            id=\"branch\"\n            name=\"branch\"\n            value={formData.branch}\n            onChange={handleChange}\n            required\n          >\n            <option value=\"\">Select Branch</option>\n\n            <option value=\"CSE\">Computer Science and Engineering</option>\n\n            <option value=\"ECE\">\n              Electronics and Communication Engineering\n            </option>\n\n            <option value=\"EEE\">Electrical and Electronics Engineering</option>\n\n            <option value=\"IT\">Information Technology</option>\n          </select>\n\n          <label htmlFor=\"cgpa\">CGPA</label>\n\n          <input\n            type=\"number\"\n            id=\"cgpa\"\n            name=\"cgpa\"\n            value={formData.cgpa}\n            onChange={handleChange}\n            placeholder=\"Enter CGPA\"\n            min=\"0\"\n            max=\"10\"\n            step=\"0.01\"\n            required\n          />\n\n          <label htmlFor=\"role\">Preferred Job Role</label>\n\n          <input\n            type=\"text\"\n            id=\"role\"\n            name=\"role\"\n            value={formData.role}\n            onChange={handleChange}\n            placeholder=\"Example: Software Developer\"\n            required\n          />\n\n          <label htmlFor=\"status\">Placement Status</label>\n\n          <select\n            id=\"status\"\n            name=\"status\"\n            value={formData.status}\n            onChange={handleChange}\n            required\n          >\n            <option value=\"\">Select Status</option>\n\n            <option value=\"Looking for opportunities\">\n              Looking for opportunities\n            </option>\n\n            <option value=\"Applied\">Applied</option>\n\n            <option value=\"Shortlisted\">Shortlisted</option>\n          </select>\n\n          <button type=\"submit\">Register for Placement</button>\n        </form>\n      </div>\n\n      {submittedStudent && (\n        <div className=\"result-card\">\n          <h2>Registration Successful</h2>\n\n          <p>\n            <strong>Name:</strong> {submittedStudent.name}\n          </p>\n\n          <p>\n            <strong>Email:</strong> {submittedStudent.email}\n          </p>\n\n          <p>\n            <strong>Branch:</strong> {submittedStudent.branch}\n          </p>\n\n          <p>\n            <strong>CGPA:</strong> {submittedStudent.cgpa}\n          </p>\n\n          <p>\n            <strong>Preferred Role:</strong> {submittedStudent.role}\n          </p>\n\n          <p>\n            <strong>Status:</strong> {submittedStudent.status}\n          </p>\n        </div>\n      )}\n    </div>\n  );\n}\n\nexport default Experiment3d;\n",
+          "sha256": "082011f3a95892b64e3ee75f89ab53299ffb2b0d811322e4f074ccba5d2b7372",
+          "redacted": false
+        },
+        {
+          "name": "3d.css",
+          "origin": "src/Experiments3/3d.css",
+          "code": ".form-container {\n  min-height: 100vh;\n  padding: 40px;\n  background: #eef2f7;\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.form-container h1 {\n  text-align: center;\n  color: #1565c0;\n}\n\n.form-card,\n.result-card {\n  max-width: 500px;\n  margin: 30px auto;\n  padding: 30px;\n  background: white;\n  border-radius: 10px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);\n}\n\n.form-card h2,\n.result-card h2 {\n  text-align: center;\n  margin-top: 0;\n}\n\nform {\n  display: flex;\n  flex-direction: column;\n}\n\nlabel {\n  margin-top: 15px;\n  margin-bottom: 6px;\n  font-weight: bold;\n}\n\ninput,\nselect {\n  padding: 10px;\n  border: 1px solid #bbb;\n  border-radius: 5px;\n  font-size: 15px;\n}\n\ninput:focus,\nselect:focus {\n  outline: none;\n  border-color: #1565c0;\n}\n\nbutton {\n  margin-top: 25px;\n  padding: 12px;\n  border: none;\n  border-radius: 6px;\n  background: #1565c0;\n  color: white;\n  font-size: 16px;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background: #0d47a1;\n}\n\n.result-card {\n  border-left: 5px solid #2e7d32;\n}\n\n.result-card p {\n  margin: 12px 0;\n}\n",
+          "formattedCode": ".form-container {\n  min-height: 100vh;\n  padding: 40px;\n  background: #eef2f7;\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.form-container h1 {\n  text-align: center;\n  color: #1565c0;\n}\n\n.form-card,\n.result-card {\n  max-width: 500px;\n  margin: 30px auto;\n  padding: 30px;\n  background: white;\n  border-radius: 10px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);\n}\n\n.form-card h2,\n.result-card h2 {\n  text-align: center;\n  margin-top: 0;\n}\n\nform {\n  display: flex;\n  flex-direction: column;\n}\n\nlabel {\n  margin-top: 15px;\n  margin-bottom: 6px;\n  font-weight: bold;\n}\n\ninput,\nselect {\n  padding: 10px;\n  border: 1px solid #bbb;\n  border-radius: 5px;\n  font-size: 15px;\n}\n\ninput:focus,\nselect:focus {\n  outline: none;\n  border-color: #1565c0;\n}\n\nbutton {\n  margin-top: 25px;\n  padding: 12px;\n  border: none;\n  border-radius: 6px;\n  background: #1565c0;\n  color: white;\n  font-size: 16px;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background: #0d47a1;\n}\n\n.result-card {\n  border-left: 5px solid #2e7d32;\n}\n\n.result-card p {\n  margin: 12px 0;\n}\n",
+          "sha256": "febe339d249c668e2f87647eac43adddcbc03e14a85238ced5a60beaf7a29ae3",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "9f39f89c61a172f556da62a20b5016bd46617a03adeb894785f8889fb09ae2c9"
+    },
+    "3e": {
+      "id": "3e",
+      "files": [
+        {
+          "name": "3e.jsx",
+          "origin": "src/Experiments3/3e.jsx",
+          "code": "import \"./3e.css\";\n\nfunction Experiment3e() {\n  const companies = [\n    {\n      id: 1,\n      name: \"TCS\",\n      role: \"Software Developer\",\n      package: \"7.5 LPA\",\n      location: \"Hyderabad\",\n      openings: 25,\n    },\n    {\n      id: 2,\n      name: \"Infosys\",\n      role: \"Systems Engineer\",\n      package: \"6.5 LPA\",\n      location: \"Bangalore\",\n      openings: 20,\n    },\n    {\n      id: 3,\n      name: \"Accenture\",\n      role: \"Associate Software Engineer\",\n      package: \"6.8 LPA\",\n      location: \"Pune\",\n      openings: 15,\n    },\n    {\n      id: 4,\n      name: \"Deloitte\",\n      role: \"Analyst\",\n      package: \"8 LPA\",\n      location: \"Hyderabad\",\n      openings: 10,\n    },\n    {\n      id: 5,\n      name: \"Wipro\",\n      role: \"Project Engineer\",\n      package: \"5.5 LPA\",\n      location: \"Chennai\",\n      openings: 18,\n    },\n    {\n      id: 6,\n      name: \"Google\",\n      role: \"Human Resources\",\n      package: \"9 LPA\",\n      location: \"Mumbai\",\n      openings: 1,\n    },\n  ];\n\n  return (\n    <div className=\"placement-container\">\n      <h1>Campus Placement Dashboard</h1>\n\n      <h2>Available Placement Opportunities</h2>\n\n      <div className=\"company-grid\">\n        {companies.map((company) => (\n          <div className=\"company-card\" key={company.id}>\n            <h3>{company.name}</h3>\n\n            <p>\n              <strong>Role:</strong> {company.role}\n            </p>\n\n            <p>\n              <strong>Package:</strong> {company.package}\n            </p>\n\n            <p>\n              <strong>Location:</strong> {company.location}\n            </p>\n\n            <p>\n              <strong>Openings:</strong> {company.openings}\n            </p>\n\n            <button>View Details</button>\n          </div>\n        ))}\n      </div>\n    </div>\n  );\n}\n\nexport default Experiment3e;\n",
+          "formattedCode": "import './3e.css';\n\nfunction Experiment3e() {\n  const companies = [\n    {\n      id: 1,\n      name: 'TCS',\n      role: 'Software Developer',\n      package: '7.5 LPA',\n      location: 'Hyderabad',\n      openings: 25,\n    },\n    {\n      id: 2,\n      name: 'Infosys',\n      role: 'Systems Engineer',\n      package: '6.5 LPA',\n      location: 'Bangalore',\n      openings: 20,\n    },\n    {\n      id: 3,\n      name: 'Accenture',\n      role: 'Associate Software Engineer',\n      package: '6.8 LPA',\n      location: 'Pune',\n      openings: 15,\n    },\n    {\n      id: 4,\n      name: 'Deloitte',\n      role: 'Analyst',\n      package: '8 LPA',\n      location: 'Hyderabad',\n      openings: 10,\n    },\n    {\n      id: 5,\n      name: 'Wipro',\n      role: 'Project Engineer',\n      package: '5.5 LPA',\n      location: 'Chennai',\n      openings: 18,\n    },\n    {\n      id: 6,\n      name: 'Google',\n      role: 'Human Resources',\n      package: '9 LPA',\n      location: 'Mumbai',\n      openings: 1,\n    },\n  ];\n\n  return (\n    <div className=\"placement-container\">\n      <h1>Campus Placement Dashboard</h1>\n\n      <h2>Available Placement Opportunities</h2>\n\n      <div className=\"company-grid\">\n        {companies.map((company) => (\n          <div className=\"company-card\" key={company.id}>\n            <h3>{company.name}</h3>\n\n            <p>\n              <strong>Role:</strong> {company.role}\n            </p>\n\n            <p>\n              <strong>Package:</strong> {company.package}\n            </p>\n\n            <p>\n              <strong>Location:</strong> {company.location}\n            </p>\n\n            <p>\n              <strong>Openings:</strong> {company.openings}\n            </p>\n\n            <button>View Details</button>\n          </div>\n        ))}\n      </div>\n    </div>\n  );\n}\n\nexport default Experiment3e;\n",
+          "sha256": "c888fd0d3a35ef44d1637a6c5f268e3d114580cd315d5a2ec7b4954f171fe281",
+          "redacted": false
+        },
+        {
+          "name": "3e.css",
+          "origin": "src/Experiments3/3e.css",
+          "code": ".placement-container {\n  min-height: 100vh;\n  padding: 40px;\n  background: #eef2f7;\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.placement-container h1 {\n  text-align: center;\n  color: #1565c0;\n}\n\n.placement-container h2 {\n  text-align: center;\n  margin-bottom: 30px;\n}\n\n.company-grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 20px;\n  max-width: 1100px;\n  margin: auto;\n}\n\n.company-card {\n  padding: 22px;\n  background: white;\n  border-radius: 10px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);\n}\n\n.company-card h3 {\n  margin-top: 0;\n  color: #1565c0;\n}\n\n.company-card p {\n  margin: 10px 0;\n}\n\n.company-card button {\n  margin-top: 10px;\n  padding: 9px 16px;\n  border: none;\n  border-radius: 5px;\n  background: #1565c0;\n  color: white;\n  cursor: pointer;\n}\n\n.company-card button:hover {\n  background: #0d47a1;\n}\n",
+          "formattedCode": ".placement-container {\n  min-height: 100vh;\n  padding: 40px;\n  background: #eef2f7;\n  font-family: Arial, Helvetica, sans-serif;\n}\n\n.placement-container h1 {\n  text-align: center;\n  color: #1565c0;\n}\n\n.placement-container h2 {\n  text-align: center;\n  margin-bottom: 30px;\n}\n\n.company-grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 20px;\n  max-width: 1100px;\n  margin: auto;\n}\n\n.company-card {\n  padding: 22px;\n  background: white;\n  border-radius: 10px;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);\n}\n\n.company-card h3 {\n  margin-top: 0;\n  color: #1565c0;\n}\n\n.company-card p {\n  margin: 10px 0;\n}\n\n.company-card button {\n  margin-top: 10px;\n  padding: 9px 16px;\n  border: none;\n  border-radius: 5px;\n  background: #1565c0;\n  color: white;\n  cursor: pointer;\n}\n\n.company-card button:hover {\n  background: #0d47a1;\n}\n",
+          "sha256": "85ec8ed3d797eb9049bafccd8a64f5814bef591377971ef234bc664c43c574c9",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "e84393f7f067847e5ff291a87f3ce245a269a4ef3a27306009b43bf103aa21e9"
+    },
+    "4a": {
+      "id": "4a",
+      "files": [
+        {
+          "name": "server.js",
+          "origin": "src/Experiments4/4a/server.js",
+          "code": "// Import Express\nimport express from \"express\";\n\n// Create an Express application\nconst app = express();\n\n// Define the server port\nconst PORT = 3000;\n\n// Define the root route\napp.get(\"/\", (req, res) => {\n  res.send(\"Hello World from Express.js!\");\n});\n\n// Start the server\napp.listen(PORT, () => {\n  console.log(`Express server running at http://localhost:${PORT}`);\n});\n",
+          "formattedCode": "// Import Express\nimport express from 'express';\n\n// Create an Express application\nconst app = express();\n\n// Define the server port\nconst PORT = 3000;\n\n// Define the root route\napp.get('/', (req, res) => {\n  res.send('Hello World from Express.js!');\n});\n\n// Start the server\napp.listen(PORT, () => {\n  console.log(`Express server running at http://localhost:${PORT}`);\n});\n",
+          "sha256": "d3b6ee87780a846b2c2e25f8ac4991a7ec8e6b593a35a8375aa41f34f412fedc",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "261b49a0e5e34194347707a8a1602f1aeb633f6ce437bdd70f4f98abe2236f63"
+    },
+    "4b": {
+      "id": "4b",
+      "files": [
+        {
+          "name": "server.js",
+          "origin": "src/Experiments4/4b/server.js",
+          "code": "import express from \"express\";\n\nconst app = express();\n\nconst PORT = 3000;\n\n// Home route\napp.get(\"/\", (req, res) => {\n  res.send(\"Welcome to the Campus Placement Management System\");\n});\n\n// Students route\napp.get(\"/students\", (req, res) => {\n  res.send(\"Student Management Section\");\n});\n\n// Companies route\napp.get(\"/companies\", (req, res) => {\n  res.send(\"Company Management Section\");\n});\n\n// Jobs route\napp.get(\"/jobs\", (req, res) => {\n  res.send(\"Available Placement Jobs\");\n});\n\n// Applications route\napp.get(\"/applications\", (req, res) => {\n  res.send(\"Student Placement Applications\");\n});\n\n// Start the server\napp.listen(PORT, () => {\n  console.log(`CPMS server running at http://localhost:${PORT}`);\n});\n",
+          "formattedCode": "import express from 'express';\n\nconst app = express();\n\nconst PORT = 3000;\n\n// Home route\napp.get('/', (req, res) => {\n  res.send('Welcome to the Campus Placement Management System');\n});\n\n// Students route\napp.get('/students', (req, res) => {\n  res.send('Student Management Section');\n});\n\n// Companies route\napp.get('/companies', (req, res) => {\n  res.send('Company Management Section');\n});\n\n// Jobs route\napp.get('/jobs', (req, res) => {\n  res.send('Available Placement Jobs');\n});\n\n// Applications route\napp.get('/applications', (req, res) => {\n  res.send('Student Placement Applications');\n});\n\n// Start the server\napp.listen(PORT, () => {\n  console.log(`CPMS server running at http://localhost:${PORT}`);\n});\n",
+          "sha256": "dd6a920efaee8b1191e0fb26bfc63d9c4580c33cac56dcaf80295a133bd09a1e",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "1206fdf11aa6b796ee8ea160190b7acf31ef242146bff720e4e3176861249362"
+    },
+    "4c": {
+      "id": "4c",
+      "files": [
+        {
+          "name": "index.html",
+          "origin": "src/Experiments4/4c/index.html",
+          "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Express Browser Console</title>\n</head>\n\n<body>\n\n  <h1>Campus Placement Management System</h1>\n\n  <p>\n    Open the browser Developer Console to see the message.\n  </p>\n\n  <script>\n    console.log(\"Hello World from Express.js!\");\n  </script>\n\n</body>\n</html>\n",
+          "formattedCode": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Express Browser Console</title>\n  </head>\n\n  <body>\n    <h1>Campus Placement Management System</h1>\n\n    <p>Open the browser Developer Console to see the message.</p>\n\n    <script>\n      console.log('Hello World from Express.js!');\n    </script>\n  </body>\n</html>\n",
+          "sha256": "efbb3cbe25eebddb179686c30313a74c741113c30feffe715d7f6150565af2da",
+          "redacted": false
+        },
+        {
+          "name": "server.js",
+          "origin": "src/Experiments4/4c/server.js",
+          "code": "import express from \"express\";\nimport path from \"path\";\nimport { fileURLToPath } from \"url\";\n\nconst app = express();\n\nconst PORT = 3000;\n\n// Create __dirname equivalent for ES Modules\nconst __filename = fileURLToPath(import.meta.url);\nconst __dirname = path.dirname(__filename);\n\n// Serve the HTML file\napp.get(\"/\", (req, res) => {\n  res.sendFile(path.join(__dirname, \"index.html\"));\n});\n\n// Start the server\napp.listen(PORT, () => {\n  console.log(`Server running at http://localhost:${PORT}`);\n});\n",
+          "formattedCode": "import express from 'express';\nimport path from 'path';\nimport { fileURLToPath } from 'url';\n\nconst app = express();\n\nconst PORT = 3000;\n\n// Create __dirname equivalent for ES Modules\nconst __filename = fileURLToPath(import.meta.url);\nconst __dirname = path.dirname(__filename);\n\n// Serve the HTML file\napp.get('/', (req, res) => {\n  res.sendFile(path.join(__dirname, 'index.html'));\n});\n\n// Start the server\napp.listen(PORT, () => {\n  console.log(`Server running at http://localhost:${PORT}`);\n});\n",
+          "sha256": "4c49a487e5c1f8358b43d1f6326887d40059761f2cf931f16453dd55f88ab7e9",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "a17710932b3d0424ef56529f6bacfcfac2b938ea271a9d8da2616a872ee0b7de"
+    },
+    "4d": {
+      "id": "4d",
+      "files": [
+        {
+          "name": "server.js",
+          "origin": "src/Experiments4/4d/server.js",
+          "code": "import express from \"express\";\n\nconst app = express();\nconst PORT = 3000;\n\n// Middleware to read JSON request bodies\napp.use(express.json());\n\n// Sample placement application data\nlet applications = [\n  {\n    id: 1,\n    studentName: \"Rahul\",\n    company: \"TCS\",\n    position: \"Software Engineer\",\n    status: \"Applied\",\n  },\n  {\n    id: 2,\n    studentName: \"Priya\",\n    company: \"Infosys\",\n    position: \"System Engineer\",\n    status: \"Shortlisted\",\n  },\n];\n\nlet nextId = 3;\n\n// Open the application list when visiting the server's home page.\napp.get(\"/\", (req, res) => res.redirect(\"/applications\"));\n\n// CREATE - Add a new application\napp.post(\"/applications\", (req, res) => {\n  const { studentName, company, position, status = \"Applied\" } = req.body || {};\n  if (\n    ![studentName, company, position, status].every(\n      (value) => typeof value === \"string\" && value.trim(),\n    )\n  ) {\n    return res\n      .status(400)\n      .json({\n        message: \"Enter studentName, company, position and a valid status.\",\n      });\n  }\n  const newApplication = {\n    id: nextId++,\n    studentName: studentName.trim(),\n    company: company.trim(),\n    position: position.trim(),\n    status: status.trim(),\n  };\n\n  applications.push(newApplication);\n\n  res.status(201).json({\n    message: \"Application created successfully\",\n    application: newApplication,\n  });\n});\n\n// READ - Get all applications\napp.get(\"/applications\", (req, res) => {\n  res.json(applications);\n});\n\n// READ - Get a single application\napp.get(\"/applications/:id\", (req, res) => {\n  const id = Number(req.params.id);\n  if (!Number.isInteger(id) || id <= 0)\n    return res\n      .status(400)\n      .json({ message: \"Use a positive integer application ID.\" });\n\n  const application = applications.find((application) => application.id === id);\n\n  if (!application) {\n    return res.status(404).json({\n      message: \"Application not found\",\n    });\n  }\n\n  res.json(application);\n});\n\n// UPDATE - Update an existing application\napp.put(\"/applications/:id\", (req, res) => {\n  const id = Number(req.params.id);\n  if (!Number.isInteger(id) || id <= 0)\n    return res\n      .status(400)\n      .json({ message: \"Use a positive integer application ID.\" });\n\n  const application = applications.find((application) => application.id === id);\n\n  if (!application) {\n    return res.status(404).json({\n      message: \"Application not found\",\n    });\n  }\n\n  const { studentName, company, position, status = \"Applied\" } = req.body || {};\n  if (\n    ![studentName, company, position, status].every(\n      (value) => typeof value === \"string\" && value.trim(),\n    )\n  ) {\n    return res\n      .status(400)\n      .json({\n        message: \"Enter studentName, company, position and a valid status.\",\n      });\n  }\n  application.studentName = studentName.trim();\n  application.company = company.trim();\n  application.position = position.trim();\n  application.status = status.trim();\n\n  res.json({\n    message: \"Application updated successfully\",\n    application: application,\n  });\n});\n\n// DELETE - Delete an application\napp.delete(\"/applications/:id\", (req, res) => {\n  const id = Number(req.params.id);\n  if (!Number.isInteger(id) || id <= 0)\n    return res\n      .status(400)\n      .json({ message: \"Use a positive integer application ID.\" });\n\n  const index = applications.findIndex((application) => application.id === id);\n\n  if (index === -1) {\n    return res.status(404).json({\n      message: \"Application not found\",\n    });\n  }\n\n  const deletedApplication = applications.splice(index, 1);\n\n  res.json({\n    message: \"Application deleted successfully\",\n    application: deletedApplication[0],\n  });\n});\n\napp.use((error, req, res, next) => {\n  if (res.headersSent) return next(error);\n  res\n    .status(error.status || 500)\n    .json({\n      message:\n        error.status === 400\n          ? \"Send valid JSON in the request body.\"\n          : \"Unable to complete the request.\",\n    });\n});\n\n// Start the server\napp.listen(PORT, () => {\n  console.log(`CRUD server running at http://localhost:${PORT}`);\n});\n",
+          "formattedCode": "import express from 'express';\n\nconst app = express();\nconst PORT = 3000;\n\n// Middleware to read JSON request bodies\napp.use(express.json());\n\n// Sample placement application data\nlet applications = [\n  {\n    id: 1,\n    studentName: 'Rahul',\n    company: 'TCS',\n    position: 'Software Engineer',\n    status: 'Applied',\n  },\n  {\n    id: 2,\n    studentName: 'Priya',\n    company: 'Infosys',\n    position: 'System Engineer',\n    status: 'Shortlisted',\n  },\n];\n\nlet nextId = 3;\n\n// Open the application list when visiting the server's home page.\napp.get('/', (req, res) => res.redirect('/applications'));\n\n// CREATE - Add a new application\napp.post('/applications', (req, res) => {\n  const { studentName, company, position, status = 'Applied' } = req.body || {};\n  if (\n    ![studentName, company, position, status].every(\n      (value) => typeof value === 'string' && value.trim(),\n    )\n  ) {\n    return res.status(400).json({\n      message: 'Enter studentName, company, position and a valid status.',\n    });\n  }\n  const newApplication = {\n    id: nextId++,\n    studentName: studentName.trim(),\n    company: company.trim(),\n    position: position.trim(),\n    status: status.trim(),\n  };\n\n  applications.push(newApplication);\n\n  res.status(201).json({\n    message: 'Application created successfully',\n    application: newApplication,\n  });\n});\n\n// READ - Get all applications\napp.get('/applications', (req, res) => {\n  res.json(applications);\n});\n\n// READ - Get a single application\napp.get('/applications/:id', (req, res) => {\n  const id = Number(req.params.id);\n  if (!Number.isInteger(id) || id <= 0)\n    return res\n      .status(400)\n      .json({ message: 'Use a positive integer application ID.' });\n\n  const application = applications.find((application) => application.id === id);\n\n  if (!application) {\n    return res.status(404).json({\n      message: 'Application not found',\n    });\n  }\n\n  res.json(application);\n});\n\n// UPDATE - Update an existing application\napp.put('/applications/:id', (req, res) => {\n  const id = Number(req.params.id);\n  if (!Number.isInteger(id) || id <= 0)\n    return res\n      .status(400)\n      .json({ message: 'Use a positive integer application ID.' });\n\n  const application = applications.find((application) => application.id === id);\n\n  if (!application) {\n    return res.status(404).json({\n      message: 'Application not found',\n    });\n  }\n\n  const { studentName, company, position, status = 'Applied' } = req.body || {};\n  if (\n    ![studentName, company, position, status].every(\n      (value) => typeof value === 'string' && value.trim(),\n    )\n  ) {\n    return res.status(400).json({\n      message: 'Enter studentName, company, position and a valid status.',\n    });\n  }\n  application.studentName = studentName.trim();\n  application.company = company.trim();\n  application.position = position.trim();\n  application.status = status.trim();\n\n  res.json({\n    message: 'Application updated successfully',\n    application: application,\n  });\n});\n\n// DELETE - Delete an application\napp.delete('/applications/:id', (req, res) => {\n  const id = Number(req.params.id);\n  if (!Number.isInteger(id) || id <= 0)\n    return res\n      .status(400)\n      .json({ message: 'Use a positive integer application ID.' });\n\n  const index = applications.findIndex((application) => application.id === id);\n\n  if (index === -1) {\n    return res.status(404).json({\n      message: 'Application not found',\n    });\n  }\n\n  const deletedApplication = applications.splice(index, 1);\n\n  res.json({\n    message: 'Application deleted successfully',\n    application: deletedApplication[0],\n  });\n});\n\napp.use((error, req, res, next) => {\n  if (res.headersSent) return next(error);\n  res.status(error.status || 500).json({\n    message:\n      error.status === 400\n        ? 'Send valid JSON in the request body.'\n        : 'Unable to complete the request.',\n  });\n});\n\n// Start the server\napp.listen(PORT, () => {\n  console.log(`CRUD server running at http://localhost:${PORT}`);\n});\n",
+          "sha256": "0f9a4fa28e89ebd16aa56520b9539be796d185202767e1c1cd09a722b8b8b64f",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "19301edba533cf6df5379dd7120a7ffb7d2a3685dc484d39d75df816ca1d631e"
+    },
+    "4e": {
+      "id": "4e",
+      "files": [
+        {
+          "name": ".env.example",
+          "origin": "src/Experiments4/4e/.env.example",
+          "code": "FSD4_DB_HOST=localhost\nFSD4_DB_PORT=3306\nFSD4_DB_USER=root\nFSD4_DB_PASSWORD=root\nFSD4_DB_NAME=cpms_db\n",
+          "formattedCode": "FSD4_DB_HOST=localhost\nFSD4_DB_PORT=3306\nFSD4_DB_USER=root\nFSD4_DB_PASSWORD=root\nFSD4_DB_NAME=cpms_db\n",
+          "sha256": "dcd17100a4a99091a10496fff19e7943ae9b76b5094956878954229c809767a8",
+          "redacted": false
+        },
+        {
+          "name": "database/database.sql",
+          "origin": "src/Experiments4/4e/database/database.sql",
+          "code": "-- Separate database for basic Experiment 4e, not the complete CPMS portal.\nCREATE DATABASE IF NOT EXISTS cpms_db;\nUSE cpms_db;\n\nCREATE TABLE IF NOT EXISTS applications (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  student_name VARCHAR(100) NOT NULL,\n  company VARCHAR(100) NOT NULL,\n  position VARCHAR(100) NOT NULL,\n  status VARCHAR(50) NOT NULL DEFAULT 'Applied'\n);\n",
+          "formattedCode": "-- Separate database for basic Experiment 4e, not the complete CPMS portal.\nCREATE DATABASE IF NOT EXISTS cpms_db;\nUSE cpms_db;\n\nCREATE TABLE IF NOT EXISTS applications (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  student_name VARCHAR(100) NOT NULL,\n  company VARCHAR(100) NOT NULL,\n  position VARCHAR(100) NOT NULL,\n  status VARCHAR(50) NOT NULL DEFAULT 'Applied'\n);\n",
+          "sha256": "e438cdf5567474b730b40851ad834fbc3cb6f2c57b88507ae251779d481bda8f",
+          "redacted": false
+        },
+        {
+          "name": "db.js",
+          "origin": "src/Experiments4/4e/db.js",
+          "code": "import mysql from \"mysql2/promise\";\nimport dotenv from \"dotenv\";\n\ndotenv.config({ path: new URL(\"./.env\", import.meta.url), quiet: true });\n\nconst db = mysql.createPool({\n  host: process.env.FSD4_DB_HOST || \"localhost\",\n  port: Number(process.env.FSD4_DB_PORT || 3306),\n  user: process.env.FSD4_DB_USER || \"root\",\n  password: process.env.FSD4_DB_PASSWORD || \"root\",\n  database: process.env.FSD4_DB_NAME || \"cpms_db\",\n  waitForConnections: true,\n  connectionLimit: 10,\n  queueLimit: 0,\n});\n\nexport default db;\n",
+          "formattedCode": "import mysql from 'mysql2/promise';\nimport dotenv from 'dotenv';\n\ndotenv.config({ path: new URL('./.env', import.meta.url), quiet: true });\n\nconst db = mysql.createPool({\n  host: process.env.FSD4_DB_HOST || 'localhost',\n  port: Number(process.env.FSD4_DB_PORT || 3306),\n  user: process.env.FSD4_DB_USER || 'root',\n  password: process.env.FSD4_DB_PASSWORD || 'root',\n  database: process.env.FSD4_DB_NAME || 'cpms_db',\n  waitForConnections: true,\n  connectionLimit: 10,\n  queueLimit: 0,\n});\n\nexport default db;\n",
+          "sha256": "fbcdd8764c02a0cbd8eca46164f7fcf6c1f88f8b31f40c2969b5da676f4f14de",
+          "redacted": false
+        },
+        {
+          "name": "server.js",
+          "origin": "src/Experiments4/4e/server.js",
+          "code": "import express from \"express\";\nimport db from \"./db.js\";\n\nconst app = express();\nconst PORT = 3000;\n\napp.use(express.json());\n\n// Test the database connection\napp.get(\"/\", async (req, res) => {\n  try {\n    const [rows] = await db.query(\"SELECT 1 AS connection_status\");\n\n    res.json({\n      message: \"Express API connected to MySQL successfully\",\n      databaseStatus: rows[0].connection_status,\n    });\n  } catch (error) {\n    console.error(\"Database connection error:\", error.message);\n\n    res.status(500).json({\n      message: \"Database connection failed\",\n    });\n  }\n});\n\n// READ: Retrieve all placement applications\napp.get(\"/applications\", async (req, res) => {\n  try {\n    const [rows] = await db.query(\"SELECT * FROM applications\");\n\n    res.json(rows);\n  } catch (error) {\n    console.error(error.message);\n\n    res.status(500).json({\n      message: \"Failed to retrieve applications\",\n    });\n  }\n});\n\n// CREATE: Insert a placement application\napp.post(\"/applications\", async (req, res) => {\n  try {\n    const { student_name, company, position, status } = req.body || {};\n\n    if (\n      ![student_name, company, position].every(\n        (value) => typeof value === \"string\" && value.trim(),\n      )\n    ) {\n      return res.status(400).json({\n        message: \"student_name, company and position are required\",\n      });\n    }\n\n    const [result] = await db.execute(\n      `INSERT INTO applications\n       (student_name, company, position, status)\n       VALUES (?, ?, ?, ?)`,\n      [student_name, company, position, status || \"Applied\"],\n    );\n\n    res.status(201).json({\n      message: \"Application inserted successfully\",\n      id: result.insertId,\n    });\n  } catch (error) {\n    console.error(error.message);\n\n    res.status(500).json({\n      message: \"Failed to insert application\",\n    });\n  }\n});\n\n// Start the Express server\napp.listen(PORT, () => {\n  console.log(`Server running at http://localhost:${PORT}`);\n});\n",
+          "formattedCode": "import express from 'express';\nimport db from './db.js';\n\nconst app = express();\nconst PORT = 3000;\n\napp.use(express.json());\n\n// Test the database connection\napp.get('/', async (req, res) => {\n  try {\n    const [rows] = await db.query('SELECT 1 AS connection_status');\n\n    res.json({\n      message: 'Express API connected to MySQL successfully',\n      databaseStatus: rows[0].connection_status,\n    });\n  } catch (error) {\n    console.error('Database connection error:', error.message);\n\n    res.status(500).json({\n      message: 'Database connection failed',\n    });\n  }\n});\n\n// READ: Retrieve all placement applications\napp.get('/applications', async (req, res) => {\n  try {\n    const [rows] = await db.query('SELECT * FROM applications');\n\n    res.json(rows);\n  } catch (error) {\n    console.error(error.message);\n\n    res.status(500).json({\n      message: 'Failed to retrieve applications',\n    });\n  }\n});\n\n// CREATE: Insert a placement application\napp.post('/applications', async (req, res) => {\n  try {\n    const { student_name, company, position, status } = req.body || {};\n\n    if (\n      ![student_name, company, position].every(\n        (value) => typeof value === 'string' && value.trim(),\n      )\n    ) {\n      return res.status(400).json({\n        message: 'student_name, company and position are required',\n      });\n    }\n\n    const [result] = await db.execute(\n      `INSERT INTO applications\n       (student_name, company, position, status)\n       VALUES (?, ?, ?, ?)`,\n      [student_name, company, position, status || 'Applied'],\n    );\n\n    res.status(201).json({\n      message: 'Application inserted successfully',\n      id: result.insertId,\n    });\n  } catch (error) {\n    console.error(error.message);\n\n    res.status(500).json({\n      message: 'Failed to insert application',\n    });\n  }\n});\n\n// Start the Express server\napp.listen(PORT, () => {\n  console.log(`Server running at http://localhost:${PORT}`);\n});\n",
+          "sha256": "868bdffa7c6f2c8d573e68d0f333d07e85863bc6e1994a588a017cc4b3f184eb",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "39b26f38a5e24c45aa4c4bd6d2bb836deba8ab4beb8b84eb8cd2d6c1d25ba0e7"
+    },
+    "5a": {
+      "id": "5a",
+      "files": [
+        {
+          "name": "5a.sql",
+          "origin": "src/Experiments5/5a.sql",
+          "code": "-- 5a. Create a database and table using MySQL Command Line Client.\nCREATE DATABASE IF NOT EXISTS fsd_lab5;\nUSE fsd_lab5;\nCREATE TABLE IF NOT EXISTS students (\n    id INT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    branch VARCHAR(20) NOT NULL,\n    cgpa DECIMAL(4,2) NOT NULL\n);\nSHOW TABLES;\nDESCRIBE students;\n",
+          "formattedCode": "-- 5a. Create a database and table using MySQL Command Line Client.\nCREATE DATABASE IF NOT EXISTS fsd_lab5;\nUSE fsd_lab5;\nCREATE TABLE IF NOT EXISTS students (\n    id INT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    branch VARCHAR(20) NOT NULL,\n    cgpa DECIMAL(4,2) NOT NULL\n);\nSHOW TABLES;\nDESCRIBE students;\n",
+          "sha256": "cee498678c56ac8d79b552a50ef6e045a145795bd69120828b9b6b972f156bfa",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "8a929ad4c546d58c9cfe641a4b1a3f56fbb54de45fd485c7de4cde177faeee0f"
+    },
+    "5b": {
+      "id": "5b",
+      "files": [
+        {
+          "name": "5b.sql",
+          "origin": "src/Experiments5/5b.sql",
+          "code": "-- 5b. Create a table, insert records and update a record.\nCREATE DATABASE IF NOT EXISTS fsd_lab5;\nUSE fsd_lab5;\nCREATE TABLE IF NOT EXISTS students (\n    id INT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    branch VARCHAR(20) NOT NULL,\n    cgpa DECIMAL(4,2) NOT NULL\n);\nINSERT INTO students (id, name, branch, cgpa) VALUES\n(1, 'Giri', 'CSE', 9.10),\n(2, 'Priya', 'CSE', 7.60),\n(3, 'Arun', 'ECE', 6.80)\nON DUPLICATE KEY UPDATE name = VALUES(name), branch = VALUES(branch), cgpa = VALUES(cgpa);\n\nUPDATE students SET cgpa = 8.50 WHERE id = 2;\n\nSELECT * FROM students ORDER BY id;\n",
+          "formattedCode": "-- 5b. Create a table, insert records and update a record.\nCREATE DATABASE IF NOT EXISTS fsd_lab5;\nUSE fsd_lab5;\nCREATE TABLE IF NOT EXISTS students (\n    id INT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    branch VARCHAR(20) NOT NULL,\n    cgpa DECIMAL(4,2) NOT NULL\n);\nINSERT INTO students (id, name, branch, cgpa) VALUES\n(1, 'Giri', 'CSE', 9.10),\n(2, 'Priya', 'CSE', 7.60),\n(3, 'Arun', 'ECE', 6.80)\nON DUPLICATE KEY UPDATE name = VALUES(name), branch = VALUES(branch), cgpa = VALUES(cgpa);\n\nUPDATE students SET cgpa = 8.50 WHERE id = 2;\n\nSELECT * FROM students ORDER BY id;\n",
+          "sha256": "e7f877487b0be5ebbb8e74133e1dddbc1d5c8db143ce1040e1d4bce439e10a10",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "f6bf151fc8840b60f30b45c06ceb439ae90bc412864c53f258652eb1035f553e"
+    },
+    "5c": {
+      "id": "5c",
+      "files": [
+        {
+          "name": "5c.sql",
+          "origin": "src/Experiments5/5c.sql",
+          "code": "-- 5c. Implement subqueries. Run 5b first.\nUSE fsd_lab5;\n\n-- Scalar subquery: students whose CGPA is above the overall average.\nSELECT id, name, cgpa FROM students\nWHERE cgpa > (SELECT AVG(cgpa) FROM students)\nORDER BY id;\n\n-- IN subquery: students in a branch containing a student with CGPA >= 9.\nSELECT id, name, branch FROM students\nWHERE branch IN (SELECT branch FROM students WHERE cgpa >= 9)\nORDER BY id;\n\n-- Correlated subquery: students above their own branch's average.\nSELECT s.id, s.name, s.branch, s.cgpa FROM students AS s\nWHERE s.cgpa > (SELECT AVG(s2.cgpa) FROM students AS s2 WHERE s2.branch = s.branch)\nORDER BY s.id;\n",
+          "formattedCode": "-- 5c. Implement subqueries. Run 5b first.\nUSE fsd_lab5;\n\n-- Scalar subquery: students whose CGPA is above the overall average.\nSELECT id, name, cgpa FROM students\nWHERE cgpa > (SELECT AVG(cgpa) FROM students)\nORDER BY id;\n\n-- IN subquery: students in a branch containing a student with CGPA >= 9.\nSELECT id, name, branch FROM students\nWHERE branch IN (SELECT branch FROM students WHERE cgpa >= 9)\nORDER BY id;\n\n-- Correlated subquery: students above their own branch's average.\nSELECT s.id, s.name, s.branch, s.cgpa FROM students AS s\nWHERE s.cgpa > (SELECT AVG(s2.cgpa) FROM students AS s2 WHERE s2.branch = s.branch)\nORDER BY s.id;\n",
+          "sha256": "7ab597cfbeffabe309f1bbdf3c20f52dfe6c0282639564dfe2ceea51af559ff6",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "adfeec69c498cc0ec8c8af8c761c4eb79be7f33024ef47ee2056785fb79b655f"
+    },
+    "5d": {
+      "id": "5d",
+      "files": [
+        {
+          "name": "5d.sql",
+          "origin": "src/Experiments5/5d.sql",
+          "code": "-- 5d. Create and execute a script file in MySQL Workbench.\n-- File > New Query Tab; enter this SQL; File > Save Script As > 5d.sql.\n-- Open it with File > Open SQL Script and execute using the lightning button.\n-- Run 5b before this script.\nUSE fsd_lab5;\n\nSELECT * FROM students ORDER BY id;\n\nSELECT branch, COUNT(*) AS student_count, ROUND(AVG(cgpa), 2) AS average_cgpa\nFROM students\nGROUP BY branch\nORDER BY branch;\n",
+          "formattedCode": "-- 5d. Create and execute a script file in MySQL Workbench.\n-- File > New Query Tab; enter this SQL; File > Save Script As > 5d.sql.\n-- Open it with File > Open SQL Script and execute using the lightning button.\n-- Run 5b before this script.\nUSE fsd_lab5;\n\nSELECT * FROM students ORDER BY id;\n\nSELECT branch, COUNT(*) AS student_count, ROUND(AVG(cgpa), 2) AS average_cgpa\nFROM students\nGROUP BY branch\nORDER BY branch;\n",
+          "sha256": "d0946043c10a4c91475b10e779573562285024d80b24b17a0c87761a57a6bbcb",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "d4acfe2c409fc2fec176c2b1f7a727ffa7c8f2e35828d097cf4b29c6ceb1c1fb"
+    },
+    "5e": {
+      "id": "5e",
+      "files": [
+        {
+          "name": ".env.example",
+          "origin": "src/Experiments5/5e/.env.example",
+          "code": "FSD_DB_HOST=localhost\nFSD_DB_PORT=3306\nFSD_DB_USER=root\nFSD_DB_PASSWORD=root\n",
+          "formattedCode": "FSD_DB_HOST=localhost\nFSD_DB_PORT=3306\nFSD_DB_USER=root\nFSD_DB_PASSWORD=root\n",
+          "sha256": "604e2da46f4305d3472122967c56ab5731e1c170615eecf15dc3f5679200b871",
+          "redacted": false
+        },
+        {
+          "name": "database/database.sql",
+          "origin": "src/Experiments5/5e/database/database.sql",
+          "code": "-- 5e. Project database directory and initialization script for the Express API.\nCREATE DATABASE IF NOT EXISTS fsd_lab5;\nUSE fsd_lab5;\n\nCREATE TABLE IF NOT EXISTS students (\n    id INT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    branch VARCHAR(20) NOT NULL,\n    cgpa DECIMAL(4,2) NOT NULL\n);\n\nINSERT INTO students (id, name, branch, cgpa) VALUES\n(1, 'Giri', 'CSE', 9.10),\n(2, 'Priya', 'CSE', 8.50),\n(3, 'Arun', 'ECE', 6.80)\nON DUPLICATE KEY UPDATE name = VALUES(name), branch = VALUES(branch), cgpa = VALUES(cgpa);\n\nSELECT * FROM students ORDER BY id;\n",
+          "formattedCode": "-- 5e. Project database directory and initialization script for the Express API.\nCREATE DATABASE IF NOT EXISTS fsd_lab5;\nUSE fsd_lab5;\n\nCREATE TABLE IF NOT EXISTS students (\n    id INT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    branch VARCHAR(20) NOT NULL,\n    cgpa DECIMAL(4,2) NOT NULL\n);\n\nINSERT INTO students (id, name, branch, cgpa) VALUES\n(1, 'Giri', 'CSE', 9.10),\n(2, 'Priya', 'CSE', 8.50),\n(3, 'Arun', 'ECE', 6.80)\nON DUPLICATE KEY UPDATE name = VALUES(name), branch = VALUES(branch), cgpa = VALUES(cgpa);\n\nSELECT * FROM students ORDER BY id;\n",
+          "sha256": "d175adc957f639782a4efbeea7ba03a200fbc5e959b8112aa485ccb3f3a51a60",
+          "redacted": false
+        },
+        {
+          "name": "db.js",
+          "origin": "src/Experiments5/5e/db.js",
+          "code": "import mysql from 'mysql2/promise';\nimport dotenv from 'dotenv';\n\ndotenv.config({ path: new URL('./.env', import.meta.url), quiet: true });\n\nconst db = mysql.createPool({\n    host: process.env.FSD_DB_HOST || 'localhost',\n    port: Number(process.env.FSD_DB_PORT || 3306),\n    user: process.env.FSD_DB_USER,\n    password: process.env.FSD_DB_PASSWORD || '',\n    database: 'fsd_lab5',\n    waitForConnections: true,\n    connectionLimit: 5\n});\n\nexport default db;\n",
+          "formattedCode": "import mysql from 'mysql2/promise';\nimport dotenv from 'dotenv';\n\ndotenv.config({ path: new URL('./.env', import.meta.url), quiet: true });\n\nconst db = mysql.createPool({\n  host: process.env.FSD_DB_HOST || 'localhost',\n  port: Number(process.env.FSD_DB_PORT || 3306),\n  user: process.env.FSD_DB_USER,\n  password: process.env.FSD_DB_PASSWORD || '',\n  database: 'fsd_lab5',\n  waitForConnections: true,\n  connectionLimit: 5,\n});\n\nexport default db;\n",
+          "sha256": "455f1abec991a0f4527bb105574b1ce939f232be37aa9fc9ea8e1c253993c38e",
+          "redacted": false
+        },
+        {
+          "name": "server.js",
+          "origin": "src/Experiments5/5e/server.js",
+          "code": "import express from 'express';\nimport db from './db.js';\n\nconst app = express();\nconst PORT = 3001;\n\napp.get('/', async (req, res) => {\n    try {\n        const [rows] = await db.query('SELECT DATABASE() AS database_name');\n        res.json({ message: 'Express connected to MySQL', database: rows[0].database_name });\n    } catch {\n        res.status(503).json({ error: 'Check the MySQL server, .env credentials and database.sql initialization.' });\n    }\n});\n\napp.get('/students', async (req, res) => {\n    try {\n        const [rows] = await db.query('SELECT * FROM students ORDER BY id');\n        res.json(rows);\n    } catch {\n        res.status(503).json({ error: 'Unable to read students. Initialize fsd_lab5 and check your connection.' });\n    }\n});\n\napp.listen(PORT, '127.0.0.1', () => {\n    console.log(`Experiment 5e: http://127.0.0.1:${PORT}`);\n});\n",
+          "formattedCode": "import express from 'express';\nimport db from './db.js';\n\nconst app = express();\nconst PORT = 3001;\n\napp.get('/', async (req, res) => {\n  try {\n    const [rows] = await db.query('SELECT DATABASE() AS database_name');\n    res.json({\n      message: 'Express connected to MySQL',\n      database: rows[0].database_name,\n    });\n  } catch {\n    res\n      .status(503)\n      .json({\n        error:\n          'Check the MySQL server, .env credentials and database.sql initialization.',\n      });\n  }\n});\n\napp.get('/students', async (req, res) => {\n  try {\n    const [rows] = await db.query('SELECT * FROM students ORDER BY id');\n    res.json(rows);\n  } catch {\n    res\n      .status(503)\n      .json({\n        error:\n          'Unable to read students. Initialize fsd_lab5 and check your connection.',\n      });\n  }\n});\n\napp.listen(PORT, '127.0.0.1', () => {\n  console.log(`Experiment 5e: http://127.0.0.1:${PORT}`);\n});\n",
+          "sha256": "2170806dde9ce3a37d5ac4c6757d232da322233b4d9bfe9fb4a9f6891daa4ed1",
+          "redacted": false
+        }
+      ],
+      "fingerprint": "9f3d83d76aa3c36be796a3b3afee4bb261ce462ad7cd13b866555265ad773363"
+    }
+  }
+}

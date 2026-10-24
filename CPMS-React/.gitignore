@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.verification/
+.env
+.env.*
+!.env.example
+learning/server/.env
+submission/*.zip
+# Generated submission copies can be rebuilt from the canonical sources.
+submission/
+cpms_source_code.md
+.private/
+*.log

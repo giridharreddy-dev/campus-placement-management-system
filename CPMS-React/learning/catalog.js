@@ -1,0 +1,30 @@
+const questions = [
+  ['1a', 'Link JavaScript to HTML', 'An external script adds the placement portal welcome message.', 'components/StudentDashboard.jsx'],
+  ['1b', 'Select HTML elements', 'Select placement headings, opportunities and action buttons.', 'learning/case/1b/script.js'],
+  ['1c', 'Register event listeners', 'Listen for a student name being entered.', 'learning/case/1c/script.js'],
+  ['1d', 'Handle button clicks', 'Shortlist an opportunity using a native button.', 'components/CompanyCard.jsx'],
+  ['1e', 'Three types of functions', 'Calculate eligibility, vacancies and a placement greeting.', 'learning/case/1e/script.js'],
+  ['2a', 'Class component counter', 'Count practice interview rounds with class state.', 'learning/case/2a.jsx'],
+  ['2b', 'Functional component counter', 'Count companies on a personal practice shortlist.', 'learning/case/2b.jsx'],
+  ['2c', 'Functional click events', 'Display the next placement preparation action.', 'components/CompanyCard.jsx'],
+  ['2d', 'Conditional rendering', 'Show eligible or preparation-needed placement advice.', 'App.jsx'],
+  ['2e', 'String literals', 'Render a student greeting with ordinary and template literals.', 'components/StudentDashboard.jsx'],
+  ['3a', 'useState counter', 'Track completed placement practice problems.', 'components/StudentDashboard.jsx'],
+  ['3b', 'useEffect and Fetch API', 'Load opportunities from the isolated teaching API.', 'components/StudentDashboard.jsx'],
+  ['3c', 'Share data through props', 'Pass a student profile from parent to child.', 'components/StudentProfile.jsx'],
+  ['3d', 'React forms', 'Validate and preview a placement registration.', 'components/Login.jsx'],
+  ['3e', 'Iterative rendering with map', 'Render a keyed list of placement opportunities.', 'components/CompanyCard.jsx'],
+  ['4a', 'Express hello-world route', 'Show a welcome message from the placement server.', 'backend/server.js'],
+  ['4b', 'Express website with multiple routes', 'Navigate placement home, students and companies pages.', 'learning/server/app.mjs'],
+  ['4c', 'Hello world in the browser console', 'Serve a page whose script logs a placement greeting.', 'learning/server/app.mjs'],
+  ['4d', 'Express CRUD operations', 'Create, read, update and delete sandbox applications using MVC.', 'backend/server.js'],
+  ['4e', 'Express and MySQL driver', 'Query a separate syllabus database with mysql2.', 'backend/db.js'],
+  ['5a', 'Create a database and table', 'Create a separate database for placement exercises.', 'database/schema.sql'],
+  ['5b', 'Create, insert and update with SQL', 'Add students and update a placement application.', 'database/schema.sql'],
+  ['5c', 'MySQL subqueries', 'Find above-average candidates and companies with applications.', 'learning/case/5c.sql'],
+  ['5d', 'MySQL Workbench script', 'Save and execute a placement reporting script.', 'learning/case/5d.sql'],
+  ['5e', 'Project database directory and initialization', 'Initialize the teaching API database from a project SQL file.', 'learning/server/database/database.sql'],
+];
+
+export const lessons = questions.map(([id, title, usage, project]) => ({ id, title, usage, project, unit: Number(id[0]) }));
+export const units = ['Modern JavaScript & DOM', 'React fundamentals', 'React hooks & data', 'Node.js & Express', 'MySQL'];

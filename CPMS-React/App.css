@@ -1,0 +1,1023 @@
+/* =========================================
+   CPMS - Campus Placement Management System
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f4f6f9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+button {
+  font: inherit;
+}
+
+button:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 3px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* Main application */
+.cpms-lab-link { position: fixed; right: 18px; bottom: 16px; z-index: 10; padding: 11px 18px; background: #fff; color: #096c60; border: 1px solid #b4c7be; border-radius: 30px; text-decoration: none; font-size: 13px; box-shadow: 0 3px 15px #142f3518; }
+
+.cpms-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+.cpms-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 6%;
+  background: linear-gradient(135deg, #123b6d, #1e5795);
+  color: #ffffff;
+}
+
+.brand-section {
+  min-width: 0;
+}
+
+.system-label {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.cpms-header h1 {
+  margin: 0;
+  font-size: clamp(21px, 2.5vw, 29px);
+  line-height: 1.35;
+}
+
+.header-subtitle {
+  margin: 8px 0 0;
+  color: #dbeafe;
+  font-size: 14px;
+}
+
+.header-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+  padding: 11px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+}
+
+.status-indicator {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.15);
+}
+
+/* Main content */
+
+.cpms-main {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 35px;
+  flex: 1;
+}
+
+.welcome-section {
+  margin-bottom: 30px;
+}
+
+.welcome-section h2 {
+  margin: 0 0 9px;
+  color: #123b6d;
+  font-size: clamp(23px, 3vw, 30px);
+}
+
+.welcome-section p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Section headings */
+
+.section-heading {
+  margin-bottom: 17px;
+}
+
+.section-heading h2,
+.card-header h2 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+.section-description {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Placement summary */
+
+.summary-section {
+  margin-bottom: 30px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.summary-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+}
+
+.summary-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #eff6ff;
+  font-size: 22px;
+}
+
+.summary-value,
+.summary-label {
+  display: block;
+}
+
+.summary-value {
+  color: #123b6d;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.summary-label {
+  margin-top: 5px;
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Dashboard grid */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 22px;
+}
+
+.dashboard-card {
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.company-section {
+  grid-column: 1 / -1;
+}
+
+/* Student profile */
+
+.profile-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.profile-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 66px;
+  height: 66px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #123b6d;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.profile-details {
+  min-width: 0;
+  flex: 1;
+}
+
+.profile-details h3 {
+  margin: 2px 0 4px;
+  font-size: 19px;
+  overflow-wrap: anywhere;
+}
+
+.student-id {
+  margin: 0 0 18px;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.profile-status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.profile-info {
+  display: grid;
+  gap: 13px;
+}
+
+.profile-info p {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.profile-info strong {
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.profile-info span {
+  overflow-wrap: anywhere;
+}
+
+.email-value {
+  word-break: break-word;
+}
+
+/* Student skills */
+
+.skills-section {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.skills-section h3 {
+  margin: 0 0 13px;
+  font-size: 14px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  padding: 7px 10px;
+  border: 1px solid #dbeafe;
+  border-radius: 6px;
+  background: #eff6ff;
+  color: #1e40af;
+  font-size: 12px;
+}
+
+/* Application status */
+
+.login-button,
+.apply-button,
+.status-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 9px 14px;
+  border: none;
+  border-radius: 7px;
+  background: #123b6d;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.login-button:hover,
+.apply-button:hover,
+.status-actions button:hover {
+  background: #1e5795;
+}
+
+.apply-button:hover:not(:disabled),
+.status-actions button:hover {
+  transform: translateY(-1px);
+}
+
+.status-content {
+  padding-top: 2px;
+}
+
+.application-company {
+  margin: 0 0 5px;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-content h3 {
+  margin: 0 0 14px;
+  font-size: 20px;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-applied {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-shortlisted {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.status-interview {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-offered,
+.status-selected {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-description {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.status-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.status-actions button:last-child {
+  background: #047857;
+}
+
+.status-actions button:last-child:hover {
+  background: #065f46;
+}
+
+.demo-note {
+  margin: 17px 0 0;
+  color: #9ca3af;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.login-required {
+  padding: 25px 15px;
+  border-radius: 9px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.login-icon {
+  margin-bottom: 10px;
+  font-size: 27px;
+}
+
+.login-required h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.login-required p {
+  margin: 0 0 17px;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Company opportunities */
+
+.company-count {
+  flex-shrink: 0;
+  padding: 7px 10px;
+  border-radius: 7px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.company-list {
+  display: grid;
+  gap: 14px;
+}
+
+.company-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.company-card:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 3px 10px rgba(30, 64, 175, 0.05);
+}
+
+.company-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.company-title-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 15px;
+}
+
+.company-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #eaf2ff;
+  color: #123b6d;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.company-title-row h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.job-role {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.company-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 20px;
+  color: #4b5563;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.company-details strong {
+  color: #374151;
+  font-weight: 600;
+}
+
+.apply-button {
+  flex-shrink: 0;
+  min-width: 105px;
+}
+
+.apply-button:disabled {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.applied-button {
+  border: 1px solid #bbf7d0;
+}
+
+.application-message {
+  margin-bottom: 17px;
+  padding: 13px 15px;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  background: #f0fdf4;
+  color: #166534;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Footer */
+
+.cpms-footer {
+  margin-top: 35px;
+  padding: 24px 20px;
+  border-top: 1px solid #e5e7eb;
+  background: #eef1f5;
+  color: #6b7280;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.cpms-footer p {
+  margin: 3px 0;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  .cpms-header {
+    padding: 25px 4%;
+  }
+
+  .cpms-main {
+    padding: 28px;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .content-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .company-section {
+    grid-column: auto;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .cpms-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 23px 20px;
+  }
+
+  .header-status {
+    align-self: flex-start;
+  }
+
+  .cpms-main {
+    padding: 23px 16px;
+  }
+
+  .welcome-section {
+    margin-bottom: 24px;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px;
+  }
+
+  .summary-card {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .summary-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 19px;
+  }
+
+  .summary-value {
+    font-size: 24px;
+  }
+
+  .summary-label {
+    font-size: 11px;
+  }
+
+  .dashboard-card {
+    padding: 19px;
+  }
+
+  .card-header {
+    gap: 10px;
+  }
+
+  .card-header h2 {
+    font-size: 17px;
+  }
+
+  .profile-content {
+    gap: 13px;
+  }
+
+  .profile-avatar {
+    width: 54px;
+    height: 54px;
+    font-size: 19px;
+  }
+
+  .profile-details h3 {
+    font-size: 17px;
+  }
+
+  .company-card {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 17px;
+    padding: 16px;
+  }
+
+  .company-details {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .apply-button {
+    width: 100%;
+  }
+
+  .status-actions {
+    flex-direction: column;
+  }
+
+  .status-actions button {
+    width: 100%;
+  }
+
+  .company-count {
+    font-size: 10px;
+  }
+}
+
+/* Very narrow phones */
+
+@media (max-width: 360px) {
+  .summary-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .summary-card {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .card-header {
+    flex-wrap: wrap;
+  }
+}
+
+.error-msg { background-color: #fee2e2; color: #991b1b; border-color: #f87171; }
+
+/* =========================================
+   Milestone 2 - Auth & Role Portal Styles
+   ========================================= */
+
+.logout-button {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.logout-button:hover {
+  background: rgba(239, 68, 68, 0.85);
+  border-color: #ef4444;
+}
+
+.cpms-loading-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f9;
+  color: #4b5563;
+  gap: 16px;
+  font-size: 15px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e5e7eb;
+  border-top-color: #1e5795;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Login Page */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #0f2b4f 0%, #1a497c 50%, #2563eb 100%);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 36px 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.login-brand-icon {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.login-header h2 {
+  margin: 0;
+  color: #123b6d;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.login-subtitle {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.login-error-alert {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.login-form .form-group {
+  margin-bottom: 18px;
+}
+
+.login-form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.login-submit-button {
+  width: 100%;
+  padding: 12px;
+  background: #1e5795;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 6px;
+}
+
+.login-submit-button:hover:not(:disabled) {
+  background: #123b6d;
+}
+
+.demo-accounts-box {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.demo-accounts-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.demo-buttons-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.demo-preset-btn {
+  padding: 6px 10px;
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.demo-preset-btn:hover {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.application-badge-count {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #eff6ff;
+  color: #1e40af;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================================
+   Milestone 3 - Modal & Workflow Styles
+   ========================================= */
+
+.cpms-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+  animation: fadeIn 0.15s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.cpms-modal-content {
+  background: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  padding: 24px;
+  animation: slideUp 0.15s ease-out;
+}
+
+.cpms-modal-content.candidate-detail-modal {
+  max-width: 640px;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.cpms-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.cpms-modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+.cpms-modal-close:hover {
+  color: #111827;
+  background: #f3f4f6;
+}
+
+

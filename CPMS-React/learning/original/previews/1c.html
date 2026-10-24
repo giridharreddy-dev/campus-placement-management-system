@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <h2 id="msg">Click the button</h2>
+    <button id="btn">Click Me</button>
+    <button id="btn2">Click Me Too</button>
+    <script>let button = document.getElementById("btn")
+
+button.addEventListener("click", function() {
+    document.getElementById("msg").textContent="Button Clicked Sucessfully!";
+});
+
+let button2 = document.getElementById("btn2")
+
+button2.addEventListener("click", function() {
+    document.body.style.backgroundColor = "lightblue";
+});
+</script>
+</body>
+</html>

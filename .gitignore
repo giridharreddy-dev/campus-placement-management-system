@@ -1,0 +1,15 @@
+**/node_modules/
+**/dist/
+**/.angular/
+**/.verification/
+**/.playwright-cli/
+**/output/
+**/submission/
+**/.env
+**/.env.*
+!**/.env.example
+**/*.log
+**/*.sql.gz
+**/*.zip
+.DS_Store
+Thumbs.db

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Event</title>
+</head>
+<body>
+    <h2 id="msg">Click the button</h2>
+    <button id="btn">Click Me</button>
+    <button id="btn2">Click Me Too</button>
+    <button id="btn3">Click Me Three</button>
+    <p id="output">Click button to see output</p>
+    <script>let button=document.getElementById("btn");
+
+button.addEventListener("click",function(){
+    document.getElementById("msg").textContent="Button clicked sucessfully";
+});
+
+let button2=document.getElementById("btn2");
+
+button2.addEventListener("click",function(){
+    document.body.style.backgroundColor="lightblue";
+    document.getElementById("output").textContent = "Button 2 Clicked!";
+});
+
+let button3=document.getElementById("btn3");
+
+button3.addEventListener("click",function(){
+    document.body.style.backgroundColor="lightgreen";
+    document.getElementById("output").textContent="Button 3 Clicked!";
+});
+</script>
+</body>
+</html>

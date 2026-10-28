@@ -11,3 +11,5 @@ submission/
 cpms_source_code.md
 .private/
 *.log
+
+dist-demo/

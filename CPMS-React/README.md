@@ -23,3 +23,15 @@ Routes `/syllabus`, `/case-study`, and `/project-files` contain related classroo
 ## Checks
 
 Run `npm test` and `npm run build`. MySQL integration scripts require explicit local database configuration.
+
+
+## Public static sample workspace
+
+The GitHub Pages edition builds from `demo.html` and always runs the browser-only sample workspace. It does not include the Express API or MySQL portal. Sample changes stay in localStorage and no real applications are sent. Classroom-only route links are replaced with a link to the full source and setup guide.
+
+```powershell
+npm ci --ignore-scripts
+node tools/build-demo.mjs
+```
+
+Set `DEMO_BASE` to the GitHub project path when building for project Pages. The workflow sets `/campus-placement-management-system/` and publishes `dist-demo/` after relevant pushes to main. The normal frontend, `/demo` development route, authenticated portal, and separate Angular implementation retain their original behavior.

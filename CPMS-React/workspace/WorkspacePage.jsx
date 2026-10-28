@@ -22,6 +22,10 @@ import PreparationPlanner from '../case-study/experiment2/PreparationPlanner';
 import EligibilityDesk from '../case-study/EligibilityDesk';
 import './workspace.css';
 
+const STATIC_DEMO = import.meta.env.VITE_STATIC_DEMO === 'true';
+const PROJECT_SOURCE =
+  'https://github.com/giridharreddy-dev/campus-placement-management-system';
+
 const roleNames = {
   STUDENT: 'Student',
   RECRUITER: 'Recruiter',
@@ -65,7 +69,10 @@ const dayKey = (date) => {
 
 function Brand({ demo }) {
   return (
-    <a className="ws-brand" href={demo ? '/demo' : '/'}>
+    <a
+      className="ws-brand"
+      href={STATIC_DEMO ? import.meta.env.BASE_URL : demo ? '/demo' : '/'}
+    >
       <span className="ws-brand-mark">
         <Icon name="briefcase" size={23} />
       </span>
@@ -955,22 +962,33 @@ export default function WorkspacePage({ demo = false, user = null, onLogout }) {
           ))}
         </nav>
         <div className="ws-sidebar-bottom">
-          <p className="ws-nav-caption">LEARN & PRESENT</p>
-          <a href="/case-study">
-            <Icon name="book" />
-            Five case studies
-            <Icon name="arrow" size={14} />
-          </a>
-          <a href="/project-files">
-            <Icon name="document" />
-            Programs & source
-            <Icon name="arrow" size={14} />
-          </a>
-          <a href="/syllabus?mode=basic">
-            <Icon name="grid" />
-            Basic experiments
-            <Icon name="arrow" size={14} />
-          </a>
+          {!STATIC_DEMO && (
+            <>
+              <p className="ws-nav-caption">LEARN & PRESENT</p>
+              <a href="/case-study">
+                <Icon name="book" />
+                Five case studies
+                <Icon name="arrow" size={14} />
+              </a>
+              <a href="/project-files">
+                <Icon name="document" />
+                Programs & source
+                <Icon name="arrow" size={14} />
+              </a>
+              <a href="/syllabus?mode=basic">
+                <Icon name="grid" />
+                Basic experiments
+                <Icon name="arrow" size={14} />
+              </a>
+            </>
+          )}
+          {STATIC_DEMO && (
+            <a href={PROJECT_SOURCE} target="_blank" rel="noopener noreferrer">
+              <Icon name="document" />
+              Full project & setup
+              <Icon name="arrow" size={14} />
+            </a>
+          )}
           {!demo && (
             <a href="/manage">
               <Icon name="people" />
@@ -1080,7 +1098,9 @@ export default function WorkspacePage({ demo = false, user = null, onLogout }) {
             <div className="ws-demo-banner">
               <span>
                 <Icon name="play" size={15} />
-                Sample accounts only. Signed-in portal updates appear in the portal, not this demo.
+                {STATIC_DEMO
+                  ? 'Browser-only demo: sample data stays in this browser. No real applications are sent.'
+                  : 'Sample accounts only. Signed-in portal updates appear in the portal, not this demo.'}
               </span>
               <div>
                 {role !== 'ADMIN' && (
@@ -1096,11 +1116,14 @@ export default function WorkspacePage({ demo = false, user = null, onLogout }) {
                         setDialog(null);
                       }}
                     >
-                      {(student ? model.students : model.allDrives).map((account) => (
-                        <option key={account.id} value={account.id}>
-                          {account.name}{student ? ' · ' + account.email : ''}
-                        </option>
-                      ))}
+                      {(student ? model.students : model.allDrives).map(
+                        (account) => (
+                          <option key={account.id} value={account.id}>
+                            {account.name}
+                            {student ? ' · ' + account.email : ''}
+                          </option>
+                        ),
+                      )}
                     </select>
                   </label>
                 )}
@@ -1111,8 +1134,14 @@ export default function WorkspacePage({ demo = false, user = null, onLogout }) {
                   <Icon name="refresh" size={13} />
                   Reset demo
                 </button>
-                <a href="/">
-                  Open signed-in portal
+                <a
+                  href={STATIC_DEMO ? PROJECT_SOURCE : '/'}
+                  target={STATIC_DEMO ? '_blank' : undefined}
+                  rel={STATIC_DEMO ? 'noopener noreferrer' : undefined}
+                >
+                  {STATIC_DEMO
+                    ? 'Full project & setup'
+                    : 'Open signed-in portal'}
                   <Icon name="arrow" size={13} />
                 </a>
               </div>
